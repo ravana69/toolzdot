@@ -1,0 +1,11 @@
+function clearInput(el){el.val("");}
+$(function(){let currentTheme=null;if(localStorage.getItem('toolzdot-theme')){currentTheme=localStorage.getItem('toolzdot-theme');}else{let prefersColorSchemeDark=window.matchMedia("(prefers-color-scheme: dark)");if(prefersColorSchemeDark.matches){currentTheme="dark";}}
+if(currentTheme){if($('html').hasClass('dark')){$('html').removeClass('dark');$('html').addClass(currentTheme);}else{$('html').addClass(currentTheme);}}
+$('.dark-light').on('click',function(e){e.preventDefault();$('html').toggleClass('dark');if($('html').hasClass('dark')){localStorage.setItem('toolzdot-theme','dark');}else{localStorage.setItem('toolzdot-theme','light');}});$("#back-to-top").on('click',function(e){e.preventDefault();$('html, body').animate({scrollTop:0},'300');});$(window).scroll(function(){if($(window).scrollTop()>300){$("#back-to-top").addClass('show');}else{$("#back-to-top").removeClass('show');}});let rated=localStorage.getItem(page)!=null?false:true;$('.star').on('click mouseover mouseout',function(e){let type=e.type;if(rated){let starValue=$(this).data('id');if(type==="click"){if(starValue>1){$.ajax({url:rate_url,type:"POST",data:{tool_name:page,rating:starValue},dataType:"json",success:function(data)
+{rated=false;if(data.status==='success'){$('.rating-val').text(data.avg);$('.vote-count').text(data.vote);$('.rate_msg').removeClass('d-none');$('.star').each(function(i,obj){if(data.star>=(i+1)){$(obj).removeClass('over');$(obj).addClass('fix');}else{$(obj).removeClass('over');$(obj).removeClass('fix');}});localStorage.setItem(data.tool,'1');}},error:function(jqXHR,textStatus,errorThrown)
+{alert('Error get data from ajax');}});}}
+$('.star').each(function(i,obj){if(type==="click"){if(i<starValue){$(obj).addClass("fix");}
+else{$(obj).removeClass("fix");}}
+if(type==="mouseover"){if(i<starValue){$(obj).addClass("over");}
+else{$(obj).removeClass("over");}}
+if(type==="mouseout"){$(obj).removeClass("over");}});}else{if(type==="click"){$('.rate_rated').removeClass('d-none');}}});$('.zws').on('click',function(e){let d=document;let i=d.body.appendChild(d.createElement('input'));i.value='​';i.select();d.execCommand('copy');i.parentNode.removeChild(i);void(0);});});

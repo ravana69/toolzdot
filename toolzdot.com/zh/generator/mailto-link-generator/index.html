@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<!-- Mirrored from toolzdot.com/zh/generator/mailto-link-generator/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Nov 2022 07:13:14 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="google" content="notranslate" />
+<meta name="robots" content="index, follow" />
+<meta name="revisit-after" content="1 days" />
+
+<link rel="preload" href="../../../assets/css/app8c94.css?v=4.1" as="style">
+<link rel="preload" href="../../../assets/js/app8c94.js?v=4.1" as="script">
+<link rel="preconnect" href="https://code.jquery.com/">
+<link rel="dns-prefetch" href="https://code.jquery.com/">
+<link rel="preconnect" href="https://cdn.jsdelivr.net/">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net/">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com/">
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
+
+<link rel="stylesheet" href="../../../../cdn.jsdelivr.net/npm/bootstrap%404.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="../../../../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="../../../assets/css/app8c94.css?v=4.1" rel="stylesheet">
+
+<title>邮件链接生成器 – ToolzDot</title>
+
+<meta name="description" content="Mailto Link Generator 提供了一种简单的方法来创建 mailto 链接，而无需记住复杂的电子邮件地址或语法。">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ToolzDot" />
+<meta property="og:url" content="index.html">
+<meta property="og:title" content="邮件链接生成器 – ToolzDot">
+<meta property="og:description" content="Mailto Link Generator 提供了一种简单的方法来创建 mailto 链接，而无需记住复杂的电子邮件地址或语法。">
+<meta property="og:image" content="../../../assets/images/generator/mailto-link-generator.jpg">
+<meta itemprop="image" content="../../../assets/images/generator/mailto-link-generator.jpg">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="index.html">
+<meta property="twitter:title" content="邮件链接生成器 – ToolzDot">
+<meta property="twitter:description" content="Mailto Link Generator 提供了一种简单的方法来创建 mailto 链接，而无需记住复杂的电子邮件地址或语法。">
+<meta property="twitter:image" content="../../../assets/images/generator/mailto-link-generator.jpg">
+
+<link rel="canonical" href="index.html">
+<link rel="alternate" href="../../../generator/mailto-link-generator/index.html" hreflang="x-default" />
+<link rel="alternate" href="../../../generator/mailto-link-generator/index.html" hreflang="en" />
+<link rel="alternate" href="../../../bn/generator/mailto-link-generator/index.html" hreflang="bn" />
+<link rel="alternate" href="index.html" hreflang="zh" />
+<link rel="alternate" href="../../../fr/generator/mailto-link-generator/index.html" hreflang="fr" />
+<link rel="alternate" href="../../../de/generator/mailto-link-generator/index.html" hreflang="de" />
+<link rel="alternate" href="../../../hi/generator/mailto-link-generator/index.html" hreflang="hi" />
+<link rel="alternate" href="../../../hu/generator/mailto-link-generator/index.html" hreflang="hu" />
+<link rel="alternate" href="../../../id/generator/mailto-link-generator/index.html" hreflang="id" />
+<link rel="alternate" href="../../../it/generator/mailto-link-generator/index.html" hreflang="it" />
+<link rel="alternate" href="../../../ko/generator/mailto-link-generator/index.html" hreflang="ko" />
+<link rel="alternate" href="../../../pl/generator/mailto-link-generator/index.html" hreflang="pl" />
+<link rel="alternate" href="../../../pt/generator/mailto-link-generator/index.html" hreflang="pt" />
+<link rel="alternate" href="../../../ru/generator/mailto-link-generator/index.html" hreflang="ru" />
+<link rel="alternate" href="../../../es/generator/mailto-link-generator/index.html" hreflang="es" />
+<link rel="alternate" href="../../../sw/generator/mailto-link-generator/index.html" hreflang="sw" />
+<link rel="alternate" href="../../../te/generator/mailto-link-generator/index.html" hreflang="te" />
+<link rel="alternate" href="../../../th/generator/mailto-link-generator/index.html" hreflang="th" />
+<link rel="alternate" href="../../../uk/generator/mailto-link-generator/index.html" hreflang="uk" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="../../../assets/images/fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/images/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../../assets/images/fav/favicon-16x16.png">
+<link rel="manifest" href="../../../assets/images/fav/site.webmanifest">
+<link rel="mask-icon" href="../../../index.html" color="#5bbad5">
+<link rel="shortcut icon" href="../../../assets/images/fav/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../../assets/images/fav/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V709D1W8GB" type="399485a9dba6c0af8b31479a-text/javascript"></script>
+<script type="399485a9dba6c0af8b31479a-text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-V709D1W8GB');
+    </script>
+<script async src="../../../../pagead2.googlesyndication.com/pagead/js/f939e.txt?client=ca-pub-2505158782154953" crossorigin="anonymous" type="399485a9dba6c0af8b31479a-text/javascript"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+<div class="container">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<a class="navbar-brand" href="../../index.html">
+<img class="logo-light" src="../../../assets/images/logo-light.png" height="28" width="130" alt="ToolzDot">
+<img class="logo-dark" src="../../../assets/images/logo-dark.png" height="28" width="130" alt="ToolzDot">
+</a>
+<ul class="navbar-nav lang-menu"><li class="nav-item dropdown mr-3"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLang" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="d-inline">zh</span></a><div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownLang"><a class="dropdown-item" href="../../../generator/mailto-link-generator/index.html"><span class="">english</span></a><a class="dropdown-item" href="../../../bn/generator/mailto-link-generator/index.html"><span class="">bengali</span></a><a class="dropdown-item" href="index.html"><span class="">chinese</span></a><a class="dropdown-item" href="../../../fr/generator/mailto-link-generator/index.html"><span class="">french</span></a><a class="dropdown-item" href="../../../de/generator/mailto-link-generator/index.html"><span class="">german</span></a><a class="dropdown-item" href="../../../hi/generator/mailto-link-generator/index.html"><span class="">hindi</span></a><a class="dropdown-item" href="../../../hu/generator/mailto-link-generator/index.html"><span class="">hungarian</span></a><a class="dropdown-item" href="../../../id/generator/mailto-link-generator/index.html"><span class="">indonesian</span></a><a class="dropdown-item" href="../../../it/generator/mailto-link-generator/index.html"><span class="">italian</span></a><a class="dropdown-item" href="../../../ko/generator/mailto-link-generator/index.html"><span class="">korean</span></a><a class="dropdown-item" href="../../../pl/generator/mailto-link-generator/index.html"><span class="">polish</span></a><a class="dropdown-item" href="../../../pt/generator/mailto-link-generator/index.html"><span class="">portuguese</span></a><a class="dropdown-item" href="../../../ru/generator/mailto-link-generator/index.html"><span class="">russian</span></a><a class="dropdown-item" href="../../../es/generator/mailto-link-generator/index.html"><span class="">spanish</span></a><a class="dropdown-item" href="../../../sw/generator/mailto-link-generator/index.html"><span class="">swahili</span></a><a class="dropdown-item" href="../../../te/generator/mailto-link-generator/index.html"><span class="">telugu</span></a><a class="dropdown-item" href="../../../th/generator/mailto-link-generator/index.html"><span class="">thai</span></a><a class="dropdown-item" href="../../../uk/generator/mailto-link-generator/index.html"><span class="">ukrainian</span></a></div></li><li class="nav-item">
+<a href="#" class="nav-link dark-light" title="dark-mode">
+<i class="fa fa-moon" id="ico-moon"> </i>
+<i class="fa fa-sun" id="ico-sun"> </i>
+</a>
+</li></ul>
+</div>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+<div class="container">
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="textListDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+文本和列表 </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="textListDropdown">
+<a class="dropdown-item" href="../../text-list/random-fake-word-generator/index.html">
+假词生成器 </a>
+<a class="dropdown-item" href="../../text-list/convert-case/index.html">
+转换大小写 </a>
+<a class="dropdown-item" href="../../text-list/generate-synonym/index.html">
+生成同义词 </a>
+<a class="dropdown-item" href="../../text-list/roman-numerals-generator/index.html">
+罗马数字生成器 </a>
+<a class="dropdown-item" href="../../text-list/duplicate-word-finder/index.html">
+重复单词查找器 </a>
+<a class="dropdown-item" href="../../text-list/random-letter-generator/index.html">
+随机字母生成器 </a>
+<a class="dropdown-item" href="../../text-list/zero-width-space-bookmarklet/index.html">
+零宽度空间书签 </a>
+<a class="dropdown-item" href="../../text-list/reverse-list/index.html">
+反向列表 </a>
+<a class="dropdown-item" href="../../text-list/list-randomizer/index.html">
+列表随机化器 </a>
+<a class="dropdown-item" href="../../text-list/sort-list/index.html">
+排序列表 </a>
+<a class="dropdown-item" href="../../text-list/add-text-each-line/index.html">
+每行添加文本 </a>
+<a class="dropdown-item" href="../../text-list/remove-white-space/index.html">
+删除多余的空白 </a>
+<a class="dropdown-item" href="../../text-list/convert-tabs-spaces/index.html">
+将制表符转换为空格 </a>
+<a class="dropdown-item" href="../../text-list/convert-spaces-tabs/index.html">
+将空格转换为制表符 </a>
+<a class="dropdown-item" href="../../text-list/remove-line-break/index.html">
+删除换行符 </a>
+<a class="dropdown-item" href="../../text-list/remove-empty-line/index.html">
+删除空行 </a>
+<a class="dropdown-item" href="../../text-list/repeat-text/index.html">
+重复文本 </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="randomDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+随机 </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="randomDropdown">
+<a class="dropdown-item" href="../../random/bible-verse-generator/index.html">
+随机圣经经文生成器 </a>
+<a class="dropdown-item" href="../../random/wikipedia-random-article-and-search/index.html">
+随机维基百科文章 </a>
+<a class="dropdown-item" href="../../random/name-picker/index.html">
+随机名称选择器 </a>
+<a class="dropdown-item" href="../../random/food-generator/index.html">
+随机随机食物生成器 </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="counterDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+计数器 </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="counterDropdown">
+<a class="dropdown-item" href="../../counter/spacebar-counter/index.html">
+空格键计数器 </a>
+<a class="dropdown-item" href="../../counter/webpage-word/index.html">
+网页字数计数器 </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="socialDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+社交媒体 </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="socialDropdown">
+<a class="dropdown-item" href="../../hashtag-generator/index.html">
+Instagram 标签生成器 </a>
+<a class="dropdown-item" href="../../instagram-line-break/index.html">
+Instagram 换行生成器 </a>
+<a class="dropdown-item" href="../../pinterest-hashtag-generator/index.html">
+Pinterest Hashtag 生成器 </a>
+<a class="dropdown-item" href="../../twitter-trends/index.html">
+推特趋势 </a>
+<a class="dropdown-item" href="../../yt-trends/index.html">
+YouTube 趋势 </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="generatorsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+发电机 </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="generatorsDropdown">
+<a class="dropdown-item" href="../password-generator/index.html">
+密码生成器 </a>
+<a class="dropdown-item" href="../api-key-generator/index.html">
+API 密钥生成器 </a>
+<a class="dropdown-item" href="index.html">
+邮件链接生成器 </a>
+<a class="dropdown-item" href="../lorem-ipsum-generator/index.html">
+Lorem Ipsum 生成器 </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="colorsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+颜色 </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="colorsDropdown">
+<a class="dropdown-item" href="../../colors/lighten-color/index.html">
+淡化颜色 </a>
+<a class="dropdown-item" href="../../colors/darken-color/index.html">
+深色 </a>
+<a class="dropdown-item" href="../../colors/change-color-saturation/index.html">
+改变饱和度 </a>
+<a class="dropdown-item" href="../../colors/invert-color/index.html">
+反转颜色 </a>
+<a class="dropdown-item" href="../../colors/grayscale-color/index.html">
+灰度颜色 </a>
+<a class="dropdown-item" href="../../colors/random-color/index.html">
+随机颜色生成器 </a>
+<a class="dropdown-item" href="../../colors/blend-colors/index.html">
+混合颜色 </a>
+<a class="dropdown-item" href="../../colors/change-color-hue/index.html">
+改变颜色色调 </a>
+<a class="dropdown-item" href="../../colors/color-shades-generator/index.html">
+颜色阴影生成器 </a>
+<a class="dropdown-item" href="../../colors/random-pastel-color-generator/index.html">
+柔和的颜色生成器 </a>
+<a class="dropdown-item" href="../../colors/image-color-palette-extractor/index.html">
+调色板提取器 </a>
+<a class="dropdown-item" href="../../colors/complementary-color/index.html">
+互补色 </a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</nav><div class="container">
+<div class="row">
+<div class="col-12">
+<div class="td-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+<h1 class="py-3">邮件链接生成器</h1>
+<p class="text-muted">使用 Mailto 链接生成器，您可以快速轻松地为您的网站创建 mailto 链接</p>
+</div>
+</div>
+<div class="col-12 mb-3 mt-3">
+
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item">
+<a href="../../index.html">
+家
+</a>
+</li>
+<li class="breadcrumb-item">
+<a href="../index.html">
+发电机
+</a>
+</li>
+<li class="breadcrumb-item active">邮件链接生成器</li>
+</ol>
+<script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [{
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "家",
+                            "item": "https://toolzdot.com/zh/"
+                        },{
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "发电机",
+                            "item": "https://toolzdot.com/zh/generator/"
+                        },{
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "邮件链接生成器"
+                    }]
+                }
+                </script>
+</nav>
+
+<div class="tdotad ">
+<script async src="../../../../pagead2.googlesyndication.com/pagead/js/f939e.txt?client=ca-pub-2505158782154953" crossorigin="anonymous" type="399485a9dba6c0af8b31479a-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2505158782154953" data-ad-slot="6903139835" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script type="399485a9dba6c0af8b31479a-text/javascript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="card tb-green mt-3">
+<div class="card-body">
+<div class="row">
+<div class="col-12 col-md-10 mx-auto mb-5">
+<div class="card">
+<div class="card-header">
+选项 </div>
+<div class="card-body">
+
+<div class="form-group">
+<label for="mail_to">收件人</label>
+<input type="email" class="form-control" id="mail_to">
+</div>
+<div class="form-row">
+
+<div class="form-group col-md-6">
+<label for="mail_cc">抄送</label>
+<input type="email" class="form-control" id="mail_cc">
+</div>
+
+<div class="form-group col-md-6">
+<label for="mail_bcc">密件抄送</label>
+<input type="text" class="form-control" id="mail_bcc">
+</div>
+</div>
+
+<div class="form-group">
+<label for="mail_sub">主题</label>
+<input type="text" class="form-control" id="mail_sub">
+</div>
+
+<div class="form-group">
+<label for="mail_body">正文</label>
+<textarea id="mail_body" class="form-control" rows="7"></textarea>
+</div>
+
+<div class="form-group">
+<label for="mail_link_text">邮件链接</label>
+<input type="text" class="form-control" id="mail_link_text">
+</div>
+<div class="form-group text-center mt-3">
+<button class="btn btn-success" id="genBtn"><i class="fas fa-cog"></i> 生成</button>
+</div>
+<div class="form-row">
+
+<div class="form-group col-md-6">
+<label for="mail_link_preview">邮件链接</label>
+<textarea id="mail_link_preview" class="form-control" rows="4"></textarea>
+<p class="mt-3 text-center"><button class="btn btn-danger btn-sm copyBtn" data-clipboard-action="copy" data-clipboard-target="#mail_link_preview"><i class="far fa-copy"></i> 复制</button></p>
+</div>
+
+<div class="form-group col-md-6">
+<label for="mail_html_preview">HTML 代码</label>
+<textarea id="mail_html_preview" class="form-control" rows="4"></textarea>
+<p class="mt-3 text-center">
+<button class="btn btn-danger btn-sm copyBtn" data-clipboard-action="copy" data-clipboard-target="#mail_html_preview"><i class="far fa-copy"></i> 复制</button>
+<a class="btn btn-primary btn-sm text-white" id="tryLink"><i class="fas fa-external-link-alt"></i> 试试</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="form-row">
+</div>
+</div>
+<div class="col-12"><div class="tdotad ">
+<script async src="../../../../pagead2.googlesyndication.com/pagead/js/f939e.txt?client=ca-pub-2505158782154953" crossorigin="anonymous" type="399485a9dba6c0af8b31479a-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2505158782154953" data-ad-slot="4096476695" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script type="399485a9dba6c0af8b31479a-text/javascript">
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+</div></div>
+
+<div class="col-12 text-center">
+<div class="jumbotron mt-5">
+
+<div class="rating">
+<h2>我们的工具有多大用处？</h2>
+<p class="text-muted">点击下面的一颗星来给我们的工具打分，满分 5 星</p>
+<div class="rating-star">
+<ul class="text-center">
+<li class="star fix" data-id="1"><i class="fa fa-star" aria-hidden="true"></i></li><li class="star fix" data-id="2"><i class="fa fa-star" aria-hidden="true"></i></li><li class="star fix" data-id="3"><i class="fa fa-star" aria-hidden="true"></i></li><li class="star fix" data-id="4"><i class="fa fa-star" aria-hidden="true"></i></li><li class="star fix" data-id="5"><i class="fa fa-star" aria-hidden="true"></i></li> </ul>
+</div>
+<p>
+平均评分: <span class="rating-val">5</span> / 5
+投票数: <span class="vote-count">1</span>
+</p>
+ <div class="alert alert-success rate_msg d-none">感谢您的评分！</div>
+<div class="alert alert-warning rate_rated d-none">你已经评分了！</div>
+</div>
+<script type="application/ld+json">{
+                                    "@context": "https://schema.org/",
+                                    "@type": "SoftwareApplication",
+                                    "name": "邮件链接生成器",
+                                    "operatingSystem": "all",
+                                    "applicationCategory": "UtilitiesApplication", 
+                                    "aggregateRating": {
+                                    "@type": "AggregateRating",
+                                        "ratingValue": "5",
+                                        "ratingCount": "1",
+                                        "bestRating": "5",
+                                        "worstRating": "1"
+                                    },
+                                    "offers": {
+                                        "@type": "Offer",
+                                        "price": "0", 
+                                        "priceCurrency": "USD"
+                                    }
+                                }</script>
+
+</div>
+</div>
+</div>
+<div class="tdotad ">
+<script async src="../../../../pagead2.googlesyndication.com/pagead/js/f939e.txt?client=ca-pub-2505158782154953" crossorigin="anonymous" type="399485a9dba6c0af8b31479a-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2505158782154953" data-ad-slot="6903139835" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script type="399485a9dba6c0af8b31479a-text/javascript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<div class="row mt-5">
+
+<div class="col-lg-8 article">
+<h2>什么是 mailto 链接？</h2>
+<p>mailto 链接是一种 HTML 元素，它允许您创建一个超链接，该超链接将打开您的默认电子邮件客户端，并使用您指定的任何文本预先填写“收件人”、“主题”和“正文”字段。</p>
+<h2>mailto 链接是如何工作的？</h2>
+<p>当用户单击 mailto 链接时，他们的电子邮件客户端（如 Microsoft Outlook、Gmail 等）将打开，他们将能够向指定的地址发送带有指定主题和正文的电子邮件。 </p>
+<h2>如何在 HTML 中创建 mailto 链接？</h2>
+<p>
+在 HTML 中创建 mailto 链接很容易！只需使用 <a> 标记并像这样指定“mailto:”协议：<br />
+<a href="../../../cdn-cgi/l/email-protection.html#8ce9f4ede1fce0e9cce9e1ede5e0a2efe3e1b26b37156a041d69031d68340c693c0d6b183969211c650e2268373a63300db0a3edb28186b0a3fcb28186b0fcb2643315693c0a69041769373668340c683426651f326a022963300068340665112e690a156b110c6e0c106b37156a041d69031d68340c693c0d6b183969211c650e2268373a63300d6e0c11ac6b0e35690b37691c02633000693c0a6a051f69300c6b18246a043b6b16086537146422286b183969211c650e2268373a69222e6a043b6b272363300069093a6834216e0c106a183a68373a6836366e0c1169211b6a2239652e08690904692d2769090968360a6e0c10e9f4ede1fce0e9cce9e1ede5e0a2efe3e16e0c116f0c0eb0a3fcb28186b0fcb28186acacacac692a0e6a12106a0e246433146a0f3f652e08690904692d27690a15683437652e14691e006a212f6a1a0b69211b6a22396330006a0e24690323683729691024ace1ede5e0f8e3ac651f326a02296b16086a1027693c326a3b3769062c6e0c10b3fff9eee6e9eff8b1d5e3f9fea9bebcdff9eee6e9eff8aaeee3e8f5b1d5e3f9fea9bebccee3e8f56e0c11633000692a0e6834076a050c6b28366330168186acacacacb0edace4fee9eab1" mailto:example@email.com?subject=Your%20Subject&body=Your%20Body">给我发一封电子邮件！</a>
+</p>
+<p>
+这将创建一个链接，上面写着“给我发一封电子邮件！” 单击后，将打开用户的默认电子邮件客户端，其中“收件人”字段预填充“<span class="__cf_email__" data-cfemail="c6a3bea7abb6aaa386a3aba7afaae8a5a9ab">[email&#160;protected]</span>”，主题字段预填充“您的主题”，正文字段预填充与“你的身体”。
+</p>
+<h2>有效使用mailto链接的技巧：</h2>
+<p>以下是一些有效使用 mailto 链接的技巧：</p>
+<ol>
+<li>使用描述性链接文本，让用户知道他们在点击什么</li>
+<li>如果您要预先填写主题和正文字段，请使用 URL 编码字符串以确保您的文本正确显示</li>
+<li>在发布之前测试您的 mailto 链接，以确保它们按预期工作</li>
+</ol>
+<h2>如何解决 mailto 链接的常见问题</h2>
+<p>如果您在使用 mailto 链接时遇到问题，请检查以下几点：</p>
+<ol>
+<li>确保在 href 属性中指定了“mailto:”协议</li>
+<li>确保您的电子邮件地址有效且格式正确</li>
+<li>如果您使用的是 URL 编码字符串，请确保它们的格式和编码正确</li>
+<li>定期更改您的密码。</li>
+<li>在多个浏览器和电子邮件客户端中测试您的 mailto 链接以确保兼容性</li>
+</ol>
+<section class="faq mb-5">
+<h2>常见问题：</h2>
+
+<div id="accordion" class="my-3" itemscope itemtype="https://schema.org/FAQPage">
+<div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div class="card-header" id="faq0">
+<h3 class="mb-0" itemprop="name">
+<button class="btn collapsed" data-toggle="collapse" data-target="#collapse0" aria-expanded="false" aria-controls="collapse0">
+什么是 mailto 链接？
+</button>
+</h3>
+</div>
+<div id="collapse0" class="collapse" aria-labelledby="faq0" data-parent="#accordion">
+<div class="card-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">mailto 链接是一种 HTML 元素，允许您创建一个超链接，该超链接将打开您的默认电子邮件客户端，并使用您指定的任何文本预先填写收件人、主题和正文字段. </p>
+</div>
+</div>
+</div>
+<div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div class="card-header" id="faq1">
+<h3 class="mb-0" itemprop="name">
+<button class="btn collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+mailto 链接是如何工作的？
+</button>
+</h3>
+</div>
+<div id="collapse1" class="collapse" aria-labelledby="faq1" data-parent="#accordion">
+<div class="card-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">当用户点击 mailto 链接时，他们的电子邮件客户端（如 Microsoft Outlook、Gmail 等）将打开，他们将能够向指定的地址发送指定的电子邮件主题和正文。 </p>
+</div>
+</div>
+</div>
+<div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div class="card-header" id="faq2">
+<h3 class="mb-0" itemprop="name">
+<button class="btn collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+如何在 HTML 中创建 mailto 链接？
+</button>
+</h3>
+</div>
+<div id="collapse2" class="collapse" aria-labelledby="faq2" data-parent="#accordion">
+<div class="card-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">在 HTML 中创建 mailto 链接很容易！只需使用 <a> 标签并像这样指定“mailto:”协议：<a href="../../../cdn-cgi/l/email-protection.html#8de8f5ece0fde1e8cde8e0ece4e1a3eee2e0">给我发一封电子邮件！</a> </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+<div class="col-lg-4">
+<div class="card">
+<div class="card-body">
+<h4 class="card-title text-center">相关工具</h2>
+<ul class="list-group list-group-flush">
+
+<li class="list-group-item">
+<a href="../password-generator/index.html">
+<i class="fas fa-key" mr-2"></i>
+密码生成器 </a>
+</li>
+
+<li class="list-group-item">
+<a href="../api-key-generator/index.html">
+<i class="fas fa-grip-horizontal" mr-2"></i>
+API 密钥生成器 </a>
+</li>
+
+
+<li class="list-group-item">
+<a href="../lorem-ipsum-generator/index.html">
+<i class="far fa-file-alt" mr-2"></i>
+Lorem Ipsum 生成器 </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="container">
+<footer class="pt-4 my-md-5 pt-md-5 border-top mt-5">
+<div class="row">
+<div class="col-12 col-md">
+<img class="logo-light" src="../../../assets/images/logo-light.png" height="28" width="130" alt="ToolzDot">
+<img class="logo-dark" src="../../../assets/images/logo-dark.png" height="28" width="130" alt="ToolzDot">
+<p class="pt-3 text-muted">使用 ToolzDot 在更短的时间内完成更多工作。将所有工具集中在一个地方，您将能够更快、更智能地工作。</p>
+<p>
+<a href="https://www.facebook.com/toolzdot" target="_blank"><i class="fab fa-facebook-square fa-2x social"></i></a>
+<a href="https://twitter.com/toolzdot" target="_blank"><i class="fab fa-twitter-square fa-2x social"></i></a>
+<a href="https://pinterest.com/toolzdot" target="_blank"><i class="fab fa-pinterest-square fa-2x social"></i></a>
+<a href="https://instagram.com/toolzdot" target="_blank"><i class="fab fa-instagram-square fa-2x social"></i></a>
+<a href="https://www.linkedin.com/in/toolzdot/" target="_blank"><i class="fab fa-linkedin fa-2x social"></i></a>
+</p>
+</div>
+<div class="col-6 col-md">
+<h4>页面</h4>
+<ul class="list-unstyled text-small">
+<li><a href="../../../about/index.html" class="text-muted">关于我们</a></li>
+<li><a href="../../../contact/index.html" class="text-muted">联系我们</a></li>
+<li><a href="../../../privacy/index.html" class="text-muted">隐私政策</a></li>
+<li><a href="../../../toc/index.html" class="text-muted">条款和条件</a></li>
+<li><a href="http://www.dmca.com/Protection/Status.aspx?ID=111005f3-96da-4f46-9ab2-aa8e7388a268" title="DMCA.com Protection Status" class="dmca-badge footer-link"> <img src="../../../../images.dmca.com/Badges/dmca-badge-w100-5x1-01e6b4.png?ID=111005f3-96da-4f46-9ab2-aa8e7388a268" height="20px" width="100px" alt="DMCA.com Protection Status" /></a> <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="../../../../images.dmca.com/Badges/DMCABadgeHelper.min.js" type="399485a9dba6c0af8b31479a-text/javascript"> </script></li>
+</ul>
+</div>
+<div class="col-6 col-md">
+<h4>服务</h4>
+<ul class="list-unstyled text-small">
+<li><a href="../../twitter-trends/index.html" class="text-muted">推特趋势</a></li>
+<li><a href="../../yt-trends/index.html" class="text-muted">YouTube 趋势</a></li>
+<li><a href="../../hashtag-generator/index.html" class="text-muted">Instagram 标签生成器</a></li>
+<li><a href="../../pinterest-hashtag-generator/index.html" class="text-muted">Pinterest Hashtag 生成器</a></li>
+</ul>
+</div>
+<div class="col-6 col-md">
+<h4>工具</h4>
+<ul class="list-unstyled text-small">
+<li><a href="../../text-list/index.html" class="text-muted">文本和列表</a></li>
+<li><a href="../../random/index.html" class="text-muted">随机</a></li>
+<li><a href="../../counter/index.html" class="text-muted">计数器</a></li>
+<li><a href="../index.html" class="text-muted">发电机</a></li>
+<li><a href="../../colors/index.html" class="text-muted">颜色</a></li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="col text-center">
+<small class="d-block mb-3 text-muted">版权所有 © 2022 ToolzDot</small>
+</div>
+</div>
+</footer>
+</div>
+<script type="399485a9dba6c0af8b31479a-text/javascript">
+        var lang = "zh/index.html";
+        var page = "site_tool_generator_mailto";
+        var rate_url = "../../../rating/index.html";
+    </script>
+<script src="../../../../code.jquery.com/jquery-3.6.0.min.js" type="399485a9dba6c0af8b31479a-text/javascript"></script>
+<script src="../../../../cdn.jsdelivr.net/npm/bootstrap%404.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" type="399485a9dba6c0af8b31479a-text/javascript"></script>
+<script src="../../../assets/js/app8c94.js?v=4.1" type="399485a9dba6c0af8b31479a-text/javascript"></script>
+<script src="../../../../cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.9/clipboard.min.js" type="399485a9dba6c0af8b31479a-text/javascript"></script>
+<script type="399485a9dba6c0af8b31479a-text/javascript">
+$(document).ready(function(){
+    
+    var clipboard = new ClipboardJS('.copyBtn'); 
+    
+    $("#genBtn").click(function(){
+        const mail_to = $("#mail_to").val();
+        const mail_cc = $("#mail_cc").val();
+        const mail_bcc = $("#mail_bcc").val();
+        const mail_sub = $("#mail_sub").val();
+        const mail_body = $("#mail_body").val();
+        const mail_link_text = $("#mail_link_text").val();
+
+        let link_text ="Click Here";
+
+        if( mail_link_text ){
+            link_text = mail_link_text;
+        }
+
+        const mail_link_preview = $("#mail_link_preview");
+        const mail_html_preview = $("#mail_html_preview");
+
+        let link = `mailto:${mail_to}?cc=${mail_cc}&bcc=${mail_bcc}&subject=${encodeURIComponent(mail_sub)}&body=${encodeURIComponent(mail_body)}`
+        mail_link_preview.val(link);
+
+        let html_link = `<a href="${link}">${link_text}</a>`;
+        mail_html_preview.val(html_link);
+
+        $("#tryLink").attr('href', link);
+        $("#tryLink").attr('target', '_blank');
+    });
+
+    
+});
+
+</script> <script src="../../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="399485a9dba6c0af8b31479a-|49" defer=""></script></body>
+
+<!-- Mirrored from toolzdot.com/zh/generator/mailto-link-generator/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Nov 2022 07:13:14 GMT -->
+</html>

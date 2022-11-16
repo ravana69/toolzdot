@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="hu" dir="auto">
+
+<!-- Mirrored from toolzdot.com/hu/random/food-generator/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Nov 2022 08:02:20 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="google" content="notranslate" />
+<meta name="robots" content="index, follow" />
+<meta name="revisit-after" content="1 days" />
+
+<link rel="preload" href="../../../assets/css/app8c94.css?v=4.1" as="style">
+<link rel="preload" href="../../../assets/js/app8c94.js?v=4.1" as="script">
+<link rel="preconnect" href="https://code.jquery.com/">
+<link rel="dns-prefetch" href="https://code.jquery.com/">
+<link rel="preconnect" href="https://cdn.jsdelivr.net/">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net/">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com/">
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
+
+<link rel="stylesheet" href="../../../../cdn.jsdelivr.net/npm/bootstrap%404.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="../../../../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="../../../assets/css/app8c94.css?v=4.1" rel="stylesheet">
+
+<title>Véletlen ételgenerátor – ToolzDot</title>
+
+<meta name="description" content="A Random Food generátor egy " tökéletes" eszköz véletlenszerű élelmiszerek előállításához">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ToolzDot" />
+<meta property="og:url" content="index.html">
+<meta property="og:title" content="Véletlen ételgenerátor – ToolzDot">
+<meta property="og:description" content="A Random Food generátor egy " tökéletes" eszköz véletlenszerű élelmiszerek előállításához">
+<meta property="og:image" content="../../../assets/images/random/random-food-generator.jpg">
+<meta itemprop="image" content="../../../assets/images/random/random-food-generator.jpg">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="index.html">
+<meta property="twitter:title" content="Véletlen ételgenerátor – ToolzDot">
+<meta property="twitter:description" content="A Random Food generátor egy " tökéletes" eszköz véletlenszerű élelmiszerek előállításához">
+<meta property="twitter:image" content="../../../assets/images/random/random-food-generator.jpg">
+
+<link rel="canonical" href="index.html">
+<link rel="alternate" href="../../../random/food-generator/index.html" hreflang="x-default" />
+<link rel="alternate" href="../../../random/food-generator/index.html" hreflang="en" />
+<link rel="alternate" href="../../../bn/random/food-generator/index.html" hreflang="bn" />
+<link rel="alternate" href="../../../zh/random/food-generator/index.html" hreflang="zh" />
+<link rel="alternate" href="../../../fr/random/food-generator/index.html" hreflang="fr" />
+<link rel="alternate" href="../../../de/random/food-generator/index.html" hreflang="de" />
+<link rel="alternate" href="../../../hi/random/food-generator/index.html" hreflang="hi" />
+<link rel="alternate" href="index.html" hreflang="hu" />
+<link rel="alternate" href="../../../id/random/food-generator/index.html" hreflang="id" />
+<link rel="alternate" href="../../../it/random/food-generator/index.html" hreflang="it" />
+<link rel="alternate" href="../../../ko/random/food-generator/index.html" hreflang="ko" />
+<link rel="alternate" href="../../../pl/random/food-generator/index.html" hreflang="pl" />
+<link rel="alternate" href="../../../pt/random/food-generator/index.html" hreflang="pt" />
+<link rel="alternate" href="../../../ru/random/food-generator/index.html" hreflang="ru" />
+<link rel="alternate" href="../../../es/random/food-generator/index.html" hreflang="es" />
+<link rel="alternate" href="../../../sw/random/food-generator/index.html" hreflang="sw" />
+<link rel="alternate" href="../../../te/random/food-generator/index.html" hreflang="te" />
+<link rel="alternate" href="../../../th/random/food-generator/index.html" hreflang="th" />
+<link rel="alternate" href="../../../uk/random/food-generator/index.html" hreflang="uk" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="../../../assets/images/fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/images/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../../assets/images/fav/favicon-16x16.png">
+<link rel="manifest" href="../../../assets/images/fav/site.webmanifest">
+<link rel="mask-icon" href="../../../index.html" color="#5bbad5">
+<link rel="shortcut icon" href="../../../assets/images/fav/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../../assets/images/fav/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V709D1W8GB" type="04a0bc75527b317ca23bb76b-text/javascript"></script>
+<script type="04a0bc75527b317ca23bb76b-text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-V709D1W8GB');
+    </script>
+<script async src="../../../../pagead2.googlesyndication.com/pagead/js/f939e.txt?client=ca-pub-2505158782154953" crossorigin="anonymous" type="04a0bc75527b317ca23bb76b-text/javascript"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+<div class="container">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<a class="navbar-brand" href="../../index.html">
+<img class="logo-light" src="../../../assets/images/logo-light.png" height="28" width="130" alt="ToolzDot">
+<img class="logo-dark" src="../../../assets/images/logo-dark.png" height="28" width="130" alt="ToolzDot">
+</a>
+<ul class="navbar-nav lang-menu"><li class="nav-item dropdown mr-3"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLang" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="d-inline">hu</span></a><div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownLang"><a class="dropdown-item" href="../../../random/food-generator/index.html"><span class="">english</span></a><a class="dropdown-item" href="../../../bn/random/food-generator/index.html"><span class="">bengali</span></a><a class="dropdown-item" href="../../../zh/random/food-generator/index.html"><span class="">chinese</span></a><a class="dropdown-item" href="../../../fr/random/food-generator/index.html"><span class="">french</span></a><a class="dropdown-item" href="../../../de/random/food-generator/index.html"><span class="">german</span></a><a class="dropdown-item" href="../../../hi/random/food-generator/index.html"><span class="">hindi</span></a><a class="dropdown-item" href="index.html"><span class="">hungarian</span></a><a class="dropdown-item" href="../../../id/random/food-generator/index.html"><span class="">indonesian</span></a><a class="dropdown-item" href="../../../it/random/food-generator/index.html"><span class="">italian</span></a><a class="dropdown-item" href="../../../ko/random/food-generator/index.html"><span class="">korean</span></a><a class="dropdown-item" href="../../../pl/random/food-generator/index.html"><span class="">polish</span></a><a class="dropdown-item" href="../../../pt/random/food-generator/index.html"><span class="">portuguese</span></a><a class="dropdown-item" href="../../../ru/random/food-generator/index.html"><span class="">russian</span></a><a class="dropdown-item" href="../../../es/random/food-generator/index.html"><span class="">spanish</span></a><a class="dropdown-item" href="../../../sw/random/food-generator/index.html"><span class="">swahili</span></a><a class="dropdown-item" href="../../../te/random/food-generator/index.html"><span class="">telugu</span></a><a class="dropdown-item" href="../../../th/random/food-generator/index.html"><span class="">thai</span></a><a class="dropdown-item" href="../../../uk/random/food-generator/index.html"><span class="">ukrainian</span></a></div></li><li class="nav-item">
+<a href="#" class="nav-link dark-light" title="dark-mode">
+<i class="fa fa-moon" id="ico-moon"> </i>
+<i class="fa fa-sun" id="ico-sun"> </i>
+</a>
+</li></ul>
+</div>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+<div class="container">
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="textListDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Szöveg és listák </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="textListDropdown">
+<a class="dropdown-item" href="../../text-list/random-fake-word-generator/index.html">
+Hamis szógenerátor </a>
+<a class="dropdown-item" href="../../text-list/convert-case/index.html">
+Eset átalakítása </a>
+<a class="dropdown-item" href="../../text-list/generate-synonym/index.html">
+Szinonima generálása </a>
+<a class="dropdown-item" href="../../text-list/roman-numerals-generator/index.html">
+Római számgenerátor </a>
+<a class="dropdown-item" href="../../text-list/duplicate-word-finder/index.html">
+Duplikált szókereső </a>
+<a class="dropdown-item" href="../../text-list/random-letter-generator/index.html">
+Véletlenszerű betűgenerátor </a>
+<a class="dropdown-item" href="../../text-list/zero-width-space-bookmarklet/index.html">
+Zero-Width Space Bookmarklet </a>
+<a class="dropdown-item" href="../../text-list/reverse-list/index.html">
+Fordított lista </a>
+<a class="dropdown-item" href="../../text-list/list-randomizer/index.html">
+Lista Randomizer </a>
+<a class="dropdown-item" href="../../text-list/sort-list/index.html">
+Lista rendezése </a>
+<a class="dropdown-item" href="../../text-list/add-text-each-line/index.html">
+Szöveg hozzáadása minden sorhoz </a>
+<a class="dropdown-item" href="../../text-list/remove-white-space/index.html">
+Felös szóköz eltávolítása </a>
+<a class="dropdown-item" href="../../text-list/convert-tabs-spaces/index.html">
+Tabulátorok átalakítása szóközökké </a>
+<a class="dropdown-item" href="../../text-list/convert-spaces-tabs/index.html">
+Szóközök átalakítása tabulátorokká </a>
+<a class="dropdown-item" href="../../text-list/remove-line-break/index.html">
+Sortörések eltávolítása </a>
+<a class="dropdown-item" href="../../text-list/remove-empty-line/index.html">
+Üres sorok eltávolítása </a>
+<a class="dropdown-item" href="../../text-list/repeat-text/index.html">
+Szöveg ismétlése </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="randomDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Véletlen </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="randomDropdown">
+<a class="dropdown-item" href="../bible-verse-generator/index.html">
+Véletlenszerű bibliaversgenerátor </a>
+<a class="dropdown-item" href="../wikipedia-random-article-and-search/index.html">
+Véletlenszerű Wikipédia-cikk </a>
+<a class="dropdown-item" href="../name-picker/index.html">
+Véletlen névválasztó </a>
+<a class="dropdown-item" href="index.html">
+Véletlenszerű ételgenerátor </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="counterDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Számlálók </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="counterDropdown">
+<a class="dropdown-item" href="../../counter/spacebar-counter/index.html">
+Szóköz számláló </a>
+<a class="dropdown-item" href="../../counter/webpage-word/index.html">
+Weboldal szószámláló </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="socialDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Közösségi média </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="socialDropdown">
+<a class="dropdown-item" href="../../hashtag-generator/index.html">
+Instagram hashtag-generátor </a>
+<a class="dropdown-item" href="../../instagram-line-break/index.html">
+Instagram sortörés generátor </a>
+<a class="dropdown-item" href="../../pinterest-hashtag-generator/index.html">
+Pinterest Hashtag-generátor </a>
+<a class="dropdown-item" href="../../twitter-trends/index.html">
+Twittertrendek </a>
+<a class="dropdown-item" href="../../yt-trends/index.html">
+YouTube-trendek </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="generatorsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Generátorok </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="generatorsDropdown">
+<a class="dropdown-item" href="../../generator/password-generator/index.html">
+Jelszógenerátor </a>
+<a class="dropdown-item" href="../../generator/api-key-generator/index.html">
+API kulcsgenerátor </a>
+<a class="dropdown-item" href="../../generator/mailto-link-generator/index.html">
+Mailto linkgenerátor </a>
+<a class="dropdown-item" href="../../generator/lorem-ipsum-generator/index.html">
+Lorem Ipsum generátor </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="colorsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Színek </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="colorsDropdown">
+<a class="dropdown-item" href="../../colors/lighten-color/index.html">
+Szín világosítása </a>
+<a class="dropdown-item" href="../../colors/darken-color/index.html">
+Sötét szín </a>
+<a class="dropdown-item" href="../../colors/change-color-saturation/index.html">
+Telítettség módosítása </a>
+<a class="dropdown-item" href="../../colors/invert-color/index.html">
+Szín megfordítása </a>
+<a class="dropdown-item" href="../../colors/grayscale-color/index.html">
+Szürkeárnyalatos szín </a>
+<a class="dropdown-item" href="../../colors/random-color/index.html">
+Véletlenszerű színgenerátor </a>
+<a class="dropdown-item" href="../../colors/blend-colors/index.html">
+Színek keverése </a>
+<a class="dropdown-item" href="../../colors/change-color-hue/index.html">
+Színárnyalat módosítása </a>
+<a class="dropdown-item" href="../../colors/color-shades-generator/index.html">
+Színárnyalat-generátor </a>
+<a class="dropdown-item" href="../../colors/random-pastel-color-generator/index.html">
+Pasztellszíngenerátor </a>
+<a class="dropdown-item" href="../../colors/image-color-palette-extractor/index.html">
+Színpaletta kivonó </a>
+<a class="dropdown-item" href="../../colors/complementary-color/index.html">
+Kiegészítő szín </a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</nav><div class="container">
+<div class="row">
+<div class="col-12">
+<div class="td-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+<h1 class="py-3">Véletlen ételgenerátor</h1>
+<p class="text-muted">A Random Food generátor egy "tökéletes" eszköz véletlenszerű élelmiszerek előállításához</p>
+</div>
+</div>
+<div class="col-12 mb-3 mt-3">
+
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item">
+<a href="../../index.html">
+Főoldal
+</a>
+</li>
+<li class="breadcrumb-item">
+<a href="../index.html">
+Véletlen
+</a>
+</li>
+<li class="breadcrumb-item active">Véletlen ételgenerátor</li>
+</ol>
+<script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [{
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Főoldal",
+                            "item": "https://toolzdot.com/hu/"
+                        },{
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Véletlen",
+                            "item": "https://toolzdot.com/hu/random/"
+                        },{
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "Véletlen ételgenerátor"
+                    }]
+                }
+                </script>
+</nav>
+
+<div class="tdotad ">
+<script async src="../../../../pagead2.googlesyndication.com/pagead/js/f939e.txt?client=ca-pub-2505158782154953" crossorigin="anonymous" type="04a0bc75527b317ca23bb76b-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2505158782154953" data-ad-slot="6903139835" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script type="04a0bc75527b317ca23bb76b-text/javascript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="card tb-green mt-3">
+<div class="card-body">
+<div class="row">
+<div class="col-12 col-lg-8 mx-auto">
+<div class="random-food text-center">
+<div class="no-food">?</div>
+</div>
+</div>
+<div class="col-12">
+<div class="text-center my-3">
+<button type="button" class="btn btn-success btn-sm btn-info" id="foodGen"><i class="fas fa-cookie-bite"></i> Hozd az ételemet!</button>
+</div>
+</div>
+<div class="col-12"><div class="tdotad ">
+<script async src="../../../../pagead2.googlesyndication.com/pagead/js/f939e.txt?client=ca-pub-2505158782154953" crossorigin="anonymous" type="04a0bc75527b317ca23bb76b-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2505158782154953" data-ad-slot="4096476695" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script type="04a0bc75527b317ca23bb76b-text/javascript">
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+</div></div>
+
+<div class="col-12 text-center">
+<div class="jumbotron mt-5">
+
+<div class="rating">
+<h2>Mennyire volt hasznos az eszközünk?</h2>
+<p class="text-muted">Kattintson az alábbi csillagra, hogy 5 csillagból értékelje eszközünket</p>
+<div class="rating-star">
+<ul class="text-center">
+<li class="star fix" data-id="1"><i class="fa fa-star" aria-hidden="true"></i></li><li class="star fix" data-id="2"><i class="fa fa-star" aria-hidden="true"></i></li><li class="star fix" data-id="3"><i class="fa fa-star" aria-hidden="true"></i></li><li class="star fix" data-id="4"><i class="fa fa-star" aria-hidden="true"></i></li><li class="star fix" data-id="5"><i class="fa fa-star" aria-hidden="true"></i></li> </ul>
+</div>
+<p>
+Átlagos értékelés: <span class="rating-val">5</span> / 5
+Szavazatok száma: <span class="vote-count">2</span>
+</p>
+<div class="alert alert-success rate_msg d-none">Köszönjük értékelését!</div>
+<div class="alert alert-warning rate_rated d-none">Már értékelte!</div>
+</div>
+<script type="application/ld+json">{
+                                    "@context": "https://schema.org/",
+                                    "@type": "SoftwareApplication",
+                                    "name": "Véletlen ételgenerátor",
+                                    "operatingSystem": "all",
+                                    "applicationCategory": "UtilitiesApplication", 
+                                    "aggregateRating": {
+                                    "@type": "AggregateRating",
+                                        "ratingValue": "5",
+                                        "ratingCount": "2",
+                                        "bestRating": "5",
+                                        "worstRating": "1"
+                                    },
+                                    "offers": {
+                                        "@type": "Offer",
+                                        "price": "0", 
+                                        "priceCurrency": "USD"
+                                    }
+                                }</script>
+
+</div>
+</div>
+</div>
+<div class="tdotad ">
+<script async src="../../../../pagead2.googlesyndication.com/pagead/js/f939e.txt?client=ca-pub-2505158782154953" crossorigin="anonymous" type="04a0bc75527b317ca23bb76b-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2505158782154953" data-ad-slot="6903139835" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script type="04a0bc75527b317ca23bb76b-text/javascript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<div class="row mt-5">
+
+<div class="col-lg-8">
+<h2>Mi az a Random Food Generator?</h2>
+<p>Ha véletlenszerű élelmiszer-generátort keres, akkor jó helyen jár. Ez az eszköz segít véletlenszerűen előállítani élelmiszert. Egyszerűen kattintson a Generálás gombra. Az eszköz ezután létrehoz egy élelmiszert. Ön ennek az eszköznek a segítségével dönthet arról, hogy mit egyen, vagy egyszerűen meglepje magát egy új étellel. Próbálja ki még ma, és nézze meg, milyen egyszerű a használata.</p>
+<p>Remek eszköz azoknak, akik főzés közben ragadtak az ötletekhez, vagy valami újat szeretnének kipróbálni. Ötletbörzeként is használható szakácsok és étteremtulajdonosok számára, akik új ételekkel szeretnének kitalálni.</p>
+<section class="faq mb-5">
+<h2>GYIK:</h2>
+
+<div id="accordion" class="my-3" itemscope itemtype="https://schema.org/FAQPage">
+<div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div class="card-header" id="faq0">
+<h3 class="mb-0" itemprop="name">
+<button class="btn collapsed" data-toggle="collapse" data-target="#collapse0" aria-expanded="false" aria-controls="collapse0">
+Mi az a véletlenszerű ételgenerátor?
+</button>
+</h3>
+</div>
+<div id="collapse0" class="collapse" aria-labelledby="faq0" data-parent="#accordion">
+<div class="card-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">A véletlenszerű élelmiszergenerátor egy olyan eszköz, amely segíthet véletlenszerűen előállítani élelmiszereket. Egyszerűen kattintson a Generálás gombra, és az eszköz létrehoz egy élelmiszert. Ezzel az eszközzel segíthet a döntések meghozatalában arról, hogy mit egyél, vagy egyszerűen csak lepd meg magad egy új étellel. Próbáld ki még ma, és nézd meg, milyen egyszerű a használata. </p>
+</div>
+</div>
+</div>
+<div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div class="card-header" id="faq1">
+<h3 class="mb-0" itemprop="name">
+<button class="btn collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+Hogyan működik a véletlenszerű ételgenerátor?
+</button>
+</h3>
+</div>
+<div id="collapse1" class="collapse" aria-labelledby="faq1" data-parent="#accordion">
+<div class="card-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Az eszköz úgy működik, hogy véletlenszerűen kiválaszt egy élelmiszert az opciók listájából. Ezután kattintson a Generálás gombra egy új élelmiszer létrehozásához. </p>
+</div>
+</div>
+</div>
+<div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div class="card-header" id="faq2">
+<h3 class="mb-0" itemprop="name">
+<button class="btn collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+Milyen előnyei vannak a véletlenszerű élelmiszergenerátor használatának?
+</button>
+</h3>
+</div>
+<div id="collapse2" class="collapse" aria-labelledby="faq2" data-parent="#accordion">
+<div class="card-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">A véletlenszerű ételgenerátor használatának előnyei közé tartozik, hogy gyorsan dönthet arról, hogy mit fog enni, és meglepheti magát új ételekkel. Próbálja ki még ma, és nézze meg, milyen egyszerű használat. </p>
+</div>
+</div>
+</div>
+<div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div class="card-header" id="faq4">
+<h3 class="mb-0" itemprop="name">
+<button class="btn collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+Mi a tipp a véletlenszerű ételgenerátor használatához?
+</button>
+</h3>
+</div>
+<div id="collapse4" class="collapse" aria-labelledby="faq4" data-parent="#accordion">
+<div class="card-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Néhány tipp a véletlenszerű ételgenerátor használatához: légy nyitott új dolgok kipróbálására, és légy hajlandó kísérletezni különböző ételekkel. Az eszközt arra is használhatod, hogy segítsen döntéseket hozni arról, hogy mit egyél egyszerűen lepd meg magad egy új étellel. Próbáld ki még ma, és nézd meg, milyen egyszerű a használata. </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+<div class="col-lg-4">
+<div class="card">
+<div class="card-body">
+<h4 class="card-title text-center">Kapcsolódó eszközök</h2>
+<ul class="list-group list-group-flush">
+
+<li class="list-group-item">
+<a href="../bible-verse-generator/index.html">
+<i class="fas fa-bible" mr-2"></i>
+Véletlenszerű bibliaversgenerátor </a>
+</li>
+
+<li class="list-group-item">
+<a href="../wikipedia-random-article-and-search/index.html">
+<i class="fab fa-wikipedia-w" mr-2"></i>
+Véletlenszerű Wikipédia-cikk </a>
+</li>
+
+<li class="list-group-item">
+<a href="../name-picker/index.html">
+<i class="fas fa-hand-lizard" mr-2"></i>
+Véletlen névválasztó </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<footer class="pt-4 my-md-5 pt-md-5 border-top mt-5">
+<div class="row">
+<div class="col-12 col-md">
+<img class="logo-light" src="../../../assets/images/logo-light.png" height="28" width="130" alt="ToolzDot">
+<img class="logo-dark" src="../../../assets/images/logo-dark.png" height="28" width="130" alt="ToolzDot">
+<p class="pt-3 text-muted">Többet érhet el kevesebb idő alatt a ToolzDot segítségével. Ha minden eszköze egy helyen van, akkor gyorsabban és intelligensebben dolgozhat.</p>
+<p>
+<a href="https://www.facebook.com/toolzdot" target="_blank"><i class="fab fa-facebook-square fa-2x social"></i></a>
+<a href="https://twitter.com/toolzdot" target="_blank"><i class="fab fa-twitter-square fa-2x social"></i></a>
+<a href="https://pinterest.com/toolzdot" target="_blank"><i class="fab fa-pinterest-square fa-2x social"></i></a>
+<a href="https://instagram.com/toolzdot" target="_blank"><i class="fab fa-instagram-square fa-2x social"></i></a>
+<a href="https://www.linkedin.com/in/toolzdot/" target="_blank"><i class="fab fa-linkedin fa-2x social"></i></a>
+</p>
+</div>
+<div class="col-6 col-md">
+<h4>Oldalok</h4>
+<ul class="list-unstyled text-small">
+<li><a href="../../../about/index.html" class="text-muted">Rólunk</a></li>
+<li><a href="../../../contact/index.html" class="text-muted">Kapcsolatfelvétel</a></li>
+<li><a href="../../../privacy/index.html" class="text-muted">Adatvédelmi szabályzat</a></li>
+<li><a href="../../../toc/index.html" class="text-muted">Feltételek és feltételek</a></li>
+<li><a href="http://www.dmca.com/Protection/Status.aspx?ID=111005f3-96da-4f46-9ab2-aa8e7388a268" title="DMCA.com Protection Status" class="dmca-badge footer-link"> <img src="../../../../images.dmca.com/Badges/dmca-badge-w100-5x1-01e6b4.png?ID=111005f3-96da-4f46-9ab2-aa8e7388a268" height="20px" width="100px" alt="DMCA.com Protection Status" /></a> <script src="../../../../images.dmca.com/Badges/DMCABadgeHelper.min.js" type="04a0bc75527b317ca23bb76b-text/javascript"> </script></li>
+</ul>
+</div>
+<div class="col-6 col-md">
+<h4>Szolgáltatások</h4>
+<ul class="list-unstyled text-small">
+<li><a href="../../twitter-trends/index.html" class="text-muted">Twittertrendek</a></li>
+<li><a href="../../yt-trends/index.html" class="text-muted">YouTube-trendek</a></li>
+<li><a href="../../hashtag-generator/index.html" class="text-muted">Instagram hashtag-generátor</a></li>
+<li><a href="../../pinterest-hashtag-generator/index.html" class="text-muted">Pinterest Hashtag-generátor</a></li>
+</ul>
+</div>
+<div class="col-6 col-md">
+<h4>Eszközök</h4>
+<ul class="list-unstyled text-small">
+<li><a href="../../text-list/index.html" class="text-muted">Szöveg és listák</a></li>
+<li><a href="../index.html" class="text-muted">Véletlen</a></li>
+<li><a href="../../counter/index.html" class="text-muted">Számlálók</a></li>
+<li><a href="../../generator/index.html" class="text-muted">Generátorok</a></li>
+<li><a href="../../colors/index.html" class="text-muted">Színek</a></li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="col text-center">
+<small class="d-block mb-3 text-muted">Szerzői jog © 2022 ToolzDot</small>
+</div>
+</div>
+</footer>
+</div>
+<script type="04a0bc75527b317ca23bb76b-text/javascript">
+        var lang = "hu/index.html";
+        var page = "site_tool_random_food";
+        var rate_url = "../../../rating/index.html";
+    </script>
+<script src="../../../../code.jquery.com/jquery-3.6.0.min.js" type="04a0bc75527b317ca23bb76b-text/javascript"></script>
+<script src="../../../../cdn.jsdelivr.net/npm/bootstrap%404.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" type="04a0bc75527b317ca23bb76b-text/javascript"></script>
+<script src="../../../assets/js/app8c94.js?v=4.1" type="04a0bc75527b317ca23bb76b-text/javascript"></script>
+<script type="04a0bc75527b317ca23bb76b-text/javascript">
+    $(document).ready(function(){
+        
+        const FOODS = {
+            '347': 'Grapes',
+            '348': 'Melon',
+            '349': 'Watermelon',
+            '34a': 'Tangerine',
+            '34b': 'Lemon',
+            '34c': 'Banana',
+            '34d': 'Pineapple',
+            '34e': 'Red Apple',
+            '34f': 'Green Apple',
+            '350': 'Pear',
+            '351': 'Peach',
+            '352': 'Cherries',
+            '353': 'Strawberry',
+            '95d': 'Kiwi Fruit',
+            '345': 'Tomato',
+            '965': 'Coconut',
+            '951': 'Avocado',
+            '346': 'Eggplant',
+            '954': 'Potato',
+            '955': 'Carrot',
+            '33d': 'Ear of Corn',
+            '336': 'Hot Pepper',
+            '952': 'Cucumber',
+            '966': 'Broccoli',
+            '344': 'Mushroom',
+            '95c': 'Peanuts',
+            '330': 'Chestnut',
+            '35e': 'Bread',
+            '950': 'Croissant',
+            '956': 'Baguette Bread',
+            '968': 'Pretzel',
+            '95e': 'Pancakes',
+            '9c0': 'Cheese Wedge',
+            '356': 'Meat On Bone',
+            '357': 'Poultry Leg',
+            '969': 'Cut of Meat',
+            '953': 'Bacon',
+            '354': 'Hamburger',
+            '35f': 'French Fries',
+            '355': 'Pizza',
+            '32d': 'Hot Dog',
+            '96a': 'Sandwich',
+            '32e': 'Taco',
+            '32f': 'Burrito',
+            '959': 'Stuffed Flatbread',
+            '95a': 'Egg',
+            '958': 'Shallow Pan of Food',
+            '372': 'Pot of Food',
+            '963': 'Cornflakes',
+            '957': 'Green Salad',
+            '37f': 'Popcorn',
+            '96b': 'Canned Food',
+            '371': 'Bento Food',
+            '358': 'Rice Cracker',
+            '359': 'Rice Ball',
+            '35a': 'Cooked Rice',
+            '35b': 'Curry Rice',
+            '35c': 'Steaming Bowl',
+            '35d': 'Spaghetti',
+            '350': 'Roasted Sweet Potato',
+            '362': 'Oden',
+            '363': 'Sushi',
+            '364': 'Fried Shrimp',
+            '365': 'Fish Cake with Swirl',
+            '361': 'Dango',
+            '95f': 'Dumpling',
+            '960': 'Fortune Cookie',
+            '961': 'Takeout Box',
+            '366': 'Soft Ice Cream',
+            '367': 'Shaved Ice',
+            '368': 'Ice Cream',
+            '369': 'Doughnut',
+            '36a': 'Cookie',
+            '382': 'Birthday Cake',
+            '370': 'Shortcake',
+            '967': 'Pie',
+            '36b': 'Chocolate Bar',
+            '36c': 'Candy',
+            '36d': 'Lollipop',
+            '36e': 'Custard',
+            '36f': 'Honey Pot' 
+        };
+
+
+        function serveRandomFood() {
+            let foodsKeys = Object.keys(FOODS);
+            let randomKey = Math.floor(Math.random() * foodsKeys.length);
+
+            return foodsKeys[randomKey];
+        }
+
+
+
+        $('#foodGen').click(function () {
+            const PREFIX = 'u1f';
+            
+
+            const container = $(".random-food");
+            const foodcode = serveRandomFood();
+            const EMOJI = PREFIX + foodcode;
+            
+            container.html(
+                '<img src="https://noto-website-2.storage.googleapis.com/emoji/emoji_'+ EMOJI +'.png" class="food-emoji" />'+
+                '<h2>'+FOODS[foodcode]+'</h2>'
+            );
+
+            $(this).html('<i class="fas fa-cookie-bite"> </i> Na, vegyél másikat!');
+
+        });
+
+        
+    });
+
+</script> <script src="../../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="04a0bc75527b317ca23bb76b-|49" defer=""></script></body>
+
+<!-- Mirrored from toolzdot.com/hu/random/food-generator/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Nov 2022 08:02:20 GMT -->
+</html>

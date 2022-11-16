@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="ko" dir="auto">
+
+<!-- Mirrored from toolzdot.com/ko/text-list/remove-line-break/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Nov 2022 08:12:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="google" content="notranslate" />
+<meta name="robots" content="index, follow" />
+<meta name="revisit-after" content="1 days" />
+
+<link rel="preload" href="https://toolzdot.com/assets/css/app.css?v=4.1" as="style">
+<link rel="preload" href="https://toolzdot.com/assets/js/app.js?v=4.1" as="script">
+<link rel="preconnect" href="https://code.jquery.com/">
+<link rel="dns-prefetch" href="https://code.jquery.com/">
+<link rel="preconnect" href="https://cdn.jsdelivr.net/">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net/">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com/">
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://toolzdot.com/assets/css/app.css?v=4.1" rel="stylesheet">
+
+<title>줄 바꿈 제거 – ToolzDot</title>
+
+<meta name="description" content="이 도구를 사용하면 텍스트를 마우스 오른쪽 버튼으로 클릭하고 '줄 바꿈 제거'를 선택하여 문제를 쉽게 수정할 수 있습니다. 체크박스를 사용하여 모든 단락에 변경 사항을 적용할 수도 있습니다.">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ToolzDot" />
+<meta property="og:url" content="https://toolzdot.com/ko/text-list/remove-line-break/">
+<meta property="og:title" content="줄 바꿈 제거 – ToolzDot">
+<meta property="og:description" content="이 도구를 사용하면 텍스트를 마우스 오른쪽 버튼으로 클릭하고 '줄 바꿈 제거'를 선택하여 문제를 쉽게 수정할 수 있습니다. 체크박스를 사용하여 모든 단락에 변경 사항을 적용할 수도 있습니다.">
+<meta property="og:image" content="https://toolzdot.com/assets/images/text-lists/remove-line-breaks.jpg">
+<meta itemprop="image" content="https://toolzdot.com/assets/images/text-lists/remove-line-breaks.jpg">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://toolzdot.com/ko/text-list/remove-line-break/">
+<meta property="twitter:title" content="줄 바꿈 제거 – ToolzDot">
+<meta property="twitter:description" content="이 도구를 사용하면 텍스트를 마우스 오른쪽 버튼으로 클릭하고 '줄 바꿈 제거'를 선택하여 문제를 쉽게 수정할 수 있습니다. 체크박스를 사용하여 모든 단락에 변경 사항을 적용할 수도 있습니다.">
+<meta property="twitter:image" content="https://toolzdot.com/assets/images/text-lists/remove-line-breaks.jpg">
+
+<link rel="canonical" href="https://toolzdot.com/ko/text-list/remove-line-break/">
+<link rel="alternate" href="https://toolzdot.com/text-list/remove-line-break/" hreflang="x-default" />
+<link rel="alternate" href="https://toolzdot.com/text-list/remove-line-break/" hreflang="en" />
+<link rel="alternate" href="https://toolzdot.com/bn/text-list/remove-line-break/" hreflang="bn" />
+<link rel="alternate" href="https://toolzdot.com/zh/text-list/remove-line-break/" hreflang="zh" />
+<link rel="alternate" href="https://toolzdot.com/fr/text-list/remove-line-break/" hreflang="fr" />
+<link rel="alternate" href="https://toolzdot.com/de/text-list/remove-line-break/" hreflang="de" />
+<link rel="alternate" href="https://toolzdot.com/hi/text-list/remove-line-break/" hreflang="hi" />
+<link rel="alternate" href="https://toolzdot.com/hu/text-list/remove-line-break/" hreflang="hu" />
+<link rel="alternate" href="https://toolzdot.com/id/text-list/remove-line-break/" hreflang="id" />
+<link rel="alternate" href="https://toolzdot.com/it/text-list/remove-line-break/" hreflang="it" />
+<link rel="alternate" href="https://toolzdot.com/ko/text-list/remove-line-break/" hreflang="ko" />
+<link rel="alternate" href="https://toolzdot.com/pl/text-list/remove-line-break/" hreflang="pl" />
+<link rel="alternate" href="https://toolzdot.com/pt/text-list/remove-line-break/" hreflang="pt" />
+<link rel="alternate" href="https://toolzdot.com/ru/text-list/remove-line-break/" hreflang="ru" />
+<link rel="alternate" href="https://toolzdot.com/es/text-list/remove-line-break/" hreflang="es" />
+<link rel="alternate" href="https://toolzdot.com/sw/text-list/remove-line-break/" hreflang="sw" />
+<link rel="alternate" href="https://toolzdot.com/te/text-list/remove-line-break/" hreflang="te" />
+<link rel="alternate" href="https://toolzdot.com/th/text-list/remove-line-break/" hreflang="th" />
+<link rel="alternate" href="https://toolzdot.com/uk/text-list/remove-line-break/" hreflang="uk" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://toolzdot.com/assets/images/fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://toolzdot.com/assets/images/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://toolzdot.com/assets/images/fav/favicon-16x16.png">
+<link rel="manifest" href="https://toolzdot.com/assets/images/fav/site.webmanifest">
+<link rel="mask-icon" href="https://toolzdot.com/assets/images/fav/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="https://toolzdot.com/assets/images/fav/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="https://toolzdot.com/assets/images/fav/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V709D1W8GB" type="3349353ba2d7db1695a511d7-text/javascript"></script>
+<script type="3349353ba2d7db1695a511d7-text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-V709D1W8GB');
+    </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2505158782154953" crossorigin="anonymous" type="3349353ba2d7db1695a511d7-text/javascript"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+<div class="container">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<a class="navbar-brand" href="https://toolzdot.com/ko/">
+<img class="logo-light" src="https://toolzdot.com/assets/images/logo-light.png" height="28" width="130" alt="ToolzDot">
+<img class="logo-dark" src="https://toolzdot.com/assets/images/logo-dark.png" height="28" width="130" alt="ToolzDot">
+</a>
+<ul class="navbar-nav lang-menu"><li class="nav-item dropdown mr-3"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLang" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="d-inline">ko</span></a><div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownLang"><a class="dropdown-item" href="https://toolzdot.com/text-list/remove-line-break/"><span class="">english</span></a><a class="dropdown-item" href="https://toolzdot.com/bn/text-list/remove-line-break/"><span class="">bengali</span></a><a class="dropdown-item" href="https://toolzdot.com/zh/text-list/remove-line-break/"><span class="">chinese</span></a><a class="dropdown-item" href="https://toolzdot.com/fr/text-list/remove-line-break/"><span class="">french</span></a><a class="dropdown-item" href="https://toolzdot.com/de/text-list/remove-line-break/"><span class="">german</span></a><a class="dropdown-item" href="https://toolzdot.com/hi/text-list/remove-line-break/"><span class="">hindi</span></a><a class="dropdown-item" href="https://toolzdot.com/hu/text-list/remove-line-break/"><span class="">hungarian</span></a><a class="dropdown-item" href="https://toolzdot.com/id/text-list/remove-line-break/"><span class="">indonesian</span></a><a class="dropdown-item" href="https://toolzdot.com/it/text-list/remove-line-break/"><span class="">italian</span></a><a class="dropdown-item" href="https://toolzdot.com/ko/text-list/remove-line-break/"><span class="">korean</span></a><a class="dropdown-item" href="https://toolzdot.com/pl/text-list/remove-line-break/"><span class="">polish</span></a><a class="dropdown-item" href="https://toolzdot.com/pt/text-list/remove-line-break/"><span class="">portuguese</span></a><a class="dropdown-item" href="https://toolzdot.com/ru/text-list/remove-line-break/"><span class="">russian</span></a><a class="dropdown-item" href="https://toolzdot.com/es/text-list/remove-line-break/"><span class="">spanish</span></a><a class="dropdown-item" href="https://toolzdot.com/sw/text-list/remove-line-break/"><span class="">swahili</span></a><a class="dropdown-item" href="https://toolzdot.com/te/text-list/remove-line-break/"><span class="">telugu</span></a><a class="dropdown-item" href="https://toolzdot.com/th/text-list/remove-line-break/"><span class="">thai</span></a><a class="dropdown-item" href="https://toolzdot.com/uk/text-list/remove-line-break/"><span class="">ukrainian</span></a></div></li><li class="nav-item">
+<a href="#" class="nav-link dark-light" title="dark-mode">
+<i class="fa fa-moon" id="ico-moon"> </i>
+<i class="fa fa-sun" id="ico-sun"> </i>
+</a>
+</li></ul>
+</div>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+<div class="container">
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="textListDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+텍스트 및 목록 </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="textListDropdown">
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/random-fake-word-generator/">
+가짜 단어 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/convert-case/">
+대소문자 변환 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/generate-synonym/">
+동의어 생성 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/roman-numerals-generator/">
+로마 숫자 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/duplicate-word-finder/">
+중복된 단어 찾기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/random-letter-generator/">
+난수 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/zero-width-space-bookmarklet/">
+0 너비 공간 책갈피 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/reverse-list/">
+역 목록 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/list-randomizer/">
+목록 랜덤화기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/sort-list/">
+목록 정렬 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/add-text-each-line/">
+각 줄에 텍스트 추가 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/remove-white-space/">
+여분의 공백 제거 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/convert-tabs-spaces/">
+탭을 공백으로 변환 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/convert-spaces-tabs/">
+공간을 탭으로 변환 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/remove-line-break/">
+줄바꿈 제거 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/remove-empty-line/">
+빈 줄 제거 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/repeat-text/">
+텍스트 반복 </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="randomDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+무작위 </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="randomDropdown">
+<a class="dropdown-item" href="https://toolzdot.com/ko/random/bible-verse-generator/">
+무작위 성경 구절 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/random/wikipedia-random-article-and-search/">
+무작위 Wikipedia 기사 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/random/name-picker/">
+임의의 이름 선택기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/random/food-generator/">
+무작위 무작위 음식 생성기 </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="counterDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+카운터 </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="counterDropdown">
+<a class="dropdown-item" href="https://toolzdot.com/ko/counter/spacebar-counter/">
+스페이스바 카운터 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/counter/webpage-word/">
+웹페이지 워드 카운터 </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="socialDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+소셜 미디어 </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="socialDropdown">
+<a class="dropdown-item" href="https://toolzdot.com/ko/hashtag-generator/">
+인스타그램 해시태그 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/instagram-line-break/">
+인스타그램 줄바꿈 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/pinterest-hashtag-generator/">
+Pinterest 해시태그 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/twitter-trends/">
+트위터 트렌드 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/yt-trends/">
+YouTube 트렌드 </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="generatorsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+발전기 </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="generatorsDropdown">
+<a class="dropdown-item" href="https://toolzdot.com/ko/generator/password-generator/">
+비밀번호 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/generator/api-key-generator/">
+API 키 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/generator/mailto-link-generator/">
+메일투 링크 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/generator/lorem-ipsum-generator/">
+로렘 입섬 생성기 </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="colorsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+색상 </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="colorsDropdown">
+<a class="dropdown-item" href="https://toolzdot.com/ko/colors/lighten-color/">
+색상 밝게 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/colors/darken-color/">
+어두운 색상 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/colors/change-color-saturation/">
+채도 변경 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/colors/invert-color/">
+색상 반전 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/colors/grayscale-color/">
+색상을 그레이스케일 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/colors/random-color/">
+무작위 색상 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/colors/blend-colors/">
+색상 혼합 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/colors/change-color-hue/">
+색상 변경 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/colors/color-shades-generator/">
+색상 음영 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/colors/random-pastel-color-generator/">
+파스텔 색상 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/colors/image-color-palette-extractor/">
+색상 팔레트 추출기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/colors/complementary-color/">
+보색 색상 </a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</nav><div class="container">
+<div class="row">
+<div class="col-12">
+<div class="td-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+<h1 class="py-3">줄 바꿈 제거</h1>
+<p class="text-muted">이 도구를 사용하면 텍스트를 마우스 오른쪽 버튼으로 클릭하고 '줄 바꿈 제거'를 선택하여 문제를 쉽게 수정할 수 있습니다. 체크박스를 사용하여 모든 단락에 변경 사항을 적용할 수도 있습니다.</p>
+</div>
+</div>
+<div class="col-12 mb-3 mt-3">
+
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item">
+<a href="https://toolzdot.com/ko/">
+홈
+</a>
+</li>
+<li class="breadcrumb-item">
+<a href="https://toolzdot.com/ko/text-list/">
+텍스트 및 목록
+</a>
+</li>
+<li class="breadcrumb-item active">줄 바꿈 제거</li>
+</ol>
+<script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [{
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "홈",
+                            "item": "https://toolzdot.com/ko/"
+                        },{
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "텍스트 및 목록",
+                            "item": "https://toolzdot.com/ko/text-list/"
+                        },{
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "줄 바꿈 제거"
+                    }]
+                }
+                </script>
+</nav>
+
+<div class="tdotad ">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2505158782154953" crossorigin="anonymous" type="3349353ba2d7db1695a511d7-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2505158782154953" data-ad-slot="6903139835" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script type="3349353ba2d7db1695a511d7-text/javascript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<div class="row">
+
+<div class="col-12 col-md-8 mb-3 order-0">
+
+<div class="card mb-3">
+
+<div class="card-header">
+원본 텍스트 </div>
+
+<div class="card-body">
+
+<div class="form-group">
+<textarea class="form-control" id="srcText" rows="10"></textarea>
+<small class="form-text text-muted">원본 텍스트</small>
+</div>
+
+<div class="form-group text-center">
+<button class="btn btn-success btn-sm copyBtn" data-clipboard-action="copy" data-clipboard-target="#srcText"><i class="far fa-copy"></i> 복사</button>
+<button class="btn btn-danger btn-sm" onclick="if (!window.__cfRLUnblockHandlers) return false; clearInput($('#srcText'))" data-cf-modified-3349353ba2d7db1695a511d7-=""> <i class="far fa-trash-alt"></i> 지우기</button>
+</div>
+</div>
+</div>
+<div class="tdotad desktop">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2505158782154953" crossorigin="anonymous" type="3349353ba2d7db1695a511d7-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2505158782154953" data-ad-slot="6903139835" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script type="3349353ba2d7db1695a511d7-text/javascript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+</div>
+
+<div class="col-12 col-md-4 mb-3 order-1">
+
+<div class="card">
+
+<div class="card-header">
+옵션 </div>
+
+<div class="card-body">
+<ul class="list-group list-group-flush">
+<li class="list-group-item">
+<p class="text-muted">모든 줄 바꿈 제거 또는 단락 보존</p>
+<div class="btn-group btn-group-toggle option_style_group" data-toggle="buttons">
+<label class="btn btn-danger btn-sm active">
+<input type="radio" autocomplete="off" value="2" id="option_style_preserve" name="option_style" checked>
+보존 </label>
+<label class="btn btn-danger btn-sm">
+<input type="radio" autocomplete="off" value="1" id="option_style_rem" name="option_style">
+제거 </label>
+</div>
+</li>
+<li class="list-group-item">
+<div class="form-check">
+<input class="form-check-input" type="checkbox" name="option_line" id="option_line" checked>
+<label class="form-check-label" for="option_line">
+빈 줄로 단락 구분 </label>
+</div>
+</li>
+<li class="list-group-item">
+<div class="form-check">
+<input class="form-check-input" type="checkbox" name="option_capital" id="option_capital">
+<label class="form-check-label" for="option_capital">
+단락의 첫 글자를 대문자로 설정 </label>
+</div>
+</li>
+<li class="list-group-item">
+<div class="form-check">
+<input class="form-check-input" type="checkbox" name="option_period" id="option_period">
+<label class="form-check-label" for="option_period">
+단락 끝에 마침표 추가 </label>
+</div>
+</li>
+<li class="list-group-item">
+<div class="form-check">
+<input class="form-check-input" type="checkbox" name="option_tab" id="option_tab">
+<label class="form-check-label" for="option_tab">
+탭 문자로 단락 들여쓰기 </label>
+</div>
+</li>
+</ul>
+<div class="form-group text-center">
+<button class="btn btn-success mt-3" id="toolFooterGenBtn"><i class="fas fa-cog"></i> 제거</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-12 col-md-8 mb-3 order-2">
+<div class="card">
+<div class="card-header">
+새 텍스트 </div>
+<div class="card-body">
+<div class="form-group">
+<textarea class="form-control" id="convertedText" rows="7"></textarea>
+<small class="form-text text-muted">줄 바꿈 텍스트 제거</small>
+</div>
+<div class="form-group text-center">
+<button class="btn btn-success btn-sm copyBtn" data-clipboard-action="copy" data-clipboard-target="#convertedText"><i class="far fa-copy"></i> 복사</button>
+<button class="btn btn-danger btn-sm" onclick="if (!window.__cfRLUnblockHandlers) return false; clearInput($('#convertedText'))" data-cf-modified-3349353ba2d7db1695a511d7-=""><i class="far fa-trash-alt"></i> 지우기</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="card tb-green mt-3">
+
+<div class="card-body">
+
+<div class="row">
+
+<div class="col-12 text-center">
+<div class="jumbotron mt-5">
+
+<div class="rating">
+<h2>우리 도구가 얼마나 유용했습니까?</h2>
+<p class="text-muted">저희 도구를 별 5개 중에서 평가하려면 아래 별을 클릭하세요.</p>
+<div class="rating-star">
+<ul class="text-center">
+<li class="star fix" data-id="1"><i class="fa fa-star" aria-hidden="true"></i></li><li class="star fix" data-id="2"><i class="fa fa-star" aria-hidden="true"></i></li><li class="star fix" data-id="3"><i class="fa fa-star" aria-hidden="true"></i></li><li class="star fix" data-id="4"><i class="fa fa-star" aria-hidden="true"></i></li><li class="star fix" data-id="5"><i class="fa fa-star" aria-hidden="true"></i></li> </ul>
+</div>
+<p>
+평균 평점: <span class="rating-val">5</span> / 5
+투표 수: <span class="vote-count">1</span>
+</p>
+<div class="alert alert-success rate_msg d-none">평가해주셔서 감사합니다!</div>
+<div class="alert alert-warning rate_rated d-none">이미 평가했습니다!</div>
+</div>
+<script type="application/ld+json">{
+                                    "@context": "https://schema.org/",
+                                    "@type": "SoftwareApplication",
+                                    "name": "줄 바꿈 제거",
+                                    "operatingSystem": "all",
+                                    "applicationCategory": "UtilitiesApplication", 
+                                    "aggregateRating": {
+                                    "@type": "AggregateRating",
+                                        "ratingValue": "5",
+                                        "ratingCount": "1",
+                                        "bestRating": "5",
+                                        "worstRating": "1"
+                                    },
+                                    "offers": {
+                                        "@type": "Offer",
+                                        "price": "0", 
+                                        "priceCurrency": "USD"
+                                    }
+                                }</script>
+
+</div>
+</div>
+</div>
+
+<div class="row mt-5">
+
+<div class="col-lg-8 article">
+<h2>줄 바꿈 제거 도구란 무엇입니까?</h2>
+<p>이 도구는 주어진 텍스트에서 모든 유형의 줄 바꿈을 제거합니다. 줄 바꿈은 텍스트 줄의 끝을 나타내는 데 사용되는 문자입니다. 대부분의 텍스트 편집기에서는 새 줄 또는 캐리지 리턴으로 표시됩니다. .</p>
+<p>이 도구는 가독성을 높이기 위해 텍스트 문자열에서 줄 바꿈을 제거해야 하는 상황에서 유용할 수 있습니다. 예를 들어, 줄 바꿈으로 구분된 항목 목록이 있는 경우 이 도구를 사용하여 줄 바꿈을 제거하고 목록을 더 읽기 쉽게 만들 수 있습니다.</p>
+<h2>줄 바꿈을 제거하는 단계:</h2>
+<올>
+<li>형식을 지정할 텍스트를 입력합니다.</li>
+<li>옵션 상자에서 모든 줄 바꿈을 제거하려면 '제거'를 선택하고 맞춤 제거를 원하면 '보존' 옵션을 선택합니다.</li>
+<li>각 단락의 첫 글자를 대문자로 만들려면 '문단 첫 글자를 대문자로 만들기' 옵션을 클릭하세요.</li>
+<li>각 단락 뒤에 마침표를 추가하려면 '단락 끝에 마침표 추가' 옵션을 선택하세요.</li>
+<li>단락을 들여쓰려면 '탭 문자로 단락 들여쓰기' 옵션을 선택하세요.</li>
+<li>마지막으로 '제거' 버튼을 클릭합니다.</li>
+</ol>
+<section class="faq mb-5">
+<h2>FAQ:</h2>
+
+<div id="accordion" class="my-3" itemscope itemtype="https://schema.org/FAQPage">
+<div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div class="card-header" id="faq0">
+<h3 class="mb-0" itemprop="name">
+<button class="btn collapsed" data-toggle="collapse" data-target="#collapse0" aria-expanded="false" aria-controls="collapse0">
+줄 바꿈 제거 도구란 무엇입니까?
+</button>
+</h3>
+</div>
+<div id="collapse0" class="collapse" aria-labelledby="faq0" data-parent="#accordion">
+<div class="card-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">줄 바꿈 제거 도구는 텍스트에서 줄 바꿈을 제거하는 데 도움이 되는 도구입니다. </p>
+</div>
+</div>
+</div>
+<div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div class="card-header" id="faq1">
+<h3 class="mb-0" itemprop="name">
+<button class="btn collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+어떻게 작동합니까?
+</button>
+</h3>
+</div>
+<div id="collapse1" class="collapse" aria-labelledby="faq1" data-parent="#accordion">
+<div class="card-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">텍스트에서 줄 바꿈 문자를 제거하여 작동하므로 텍스트가 모두 한 줄에 표시됩니다. </p>
+</div>
+</div>
+</div>
+<div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div class="card-header" id="faq2">
+<h3 class="mb-0" itemprop="name">
+<button class="btn collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+줄 바꿈 제거 도구를 사용하면 어떤 이점이 있습니까?
+</button>
+</h3>
+</div>
+<div id="collapse2" class="collapse" aria-labelledby="faq2" data-parent="#accordion">
+<div class="card-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">줄 바꿈 제거 도구를 사용하면 텍스트를 더 쉽게 읽을 수 있고 텍스트를 더 쉽게 복사하여 붙여넣을 수 있다는 이점이 있습니다. </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<p><i class="fas fa-hashtag"></i> 키워드:</b> 줄 바꿈 제거, 추가 줄 바꿈 제거, 온라인에서 줄 바꿈 제거</p>
+</div>
+
+<div class="col-lg-4">
+<div class="card">
+<div class="card-body">
+<h4 class="card-title text-center">관련 도구</h2>
+<ul class="list-group list-group-flush">
+
+<li class="list-group-item">
+<a href="https://toolzdot.com/ko/text-list/random-fake-word-generator/">
+<i class="far fa-file-word" mr-2"></i>
+가짜 단어 생성기 </a>
+</li>
+
+<li class="list-group-item">
+<a href="https://toolzdot.com/ko/text-list/convert-case/">
+<i class="fas fa-font" mr-2"></i>
+대소문자 변환 </a>
+</li>
+
+<li class="list-group-item">
+<a href="https://toolzdot.com/ko/text-list/generate-synonym/">
+<i class="far fa-clone" mr-2"></i>
+동의어 생성 </a>
+</li>
+
+<li class="list-group-item">
+<a href="https://toolzdot.com/ko/text-list/roman-numerals-generator/">
+<i class="fas fa-italic" mr-2"></i>
+로마 숫자 생성기 </a>
+</li>
+
+<li class="list-group-item">
+<a href="https://toolzdot.com/ko/text-list/duplicate-word-finder/">
+<i class="fab fa-searchengin" mr-2"></i>
+중복된 단어 찾기 </a>
+</li>
+
+<li class="list-group-item">
+<a href="https://toolzdot.com/ko/text-list/random-letter-generator/">
+<i class="fab fa-acquisitions-incorporated" mr-2"></i>
+난수 생성기 </a>
+</li>
+
+<li class="list-group-item">
+<a href="https://toolzdot.com/ko/text-list/zero-width-space-bookmarklet/">
+<i class="fab fa-autoprefixer" mr-2"></i>
+0 너비 공간 책갈피 </a>
+</li>
+
+<li class="list-group-item">
+<a href="https://toolzdot.com/ko/text-list/reverse-list/">
+<i class="fas fa-sort-numeric-down-alt" mr-2"></i>
+역 목록 </a>
+</li>
+
+<li class="list-group-item">
+<a href="https://toolzdot.com/ko/text-list/list-randomizer/">
+<i class="fas fa-stream" mr-2"></i>
+목록 랜덤화기 </a>
+</li>
+
+<li class="list-group-item">
+<a href="https://toolzdot.com/ko/text-list/sort-list/">
+<i class="fas fa-list-ol" mr-2"></i>
+목록 정렬 </a>
+</li>
+
+<li class="list-group-item">
+<a href="https://toolzdot.com/ko/text-list/add-text-each-line/">
+<i class="fas fa-grip-lines" mr-2"></i>
+각 줄에 텍스트 추가 </a>
+</li
+
+                                        <!-- remove white space-->
+<li class="list-group-item">
+<a href="https://toolzdot.com/ko/text-list/remove-white-space/">
+<i class="fab fa-perbyte" mr-2"></i>
+여분의 공백 제거 </a>
+</li>
+
+<li class="list-group-item">
+<a href="https://toolzdot.com/ko/text-list/convert-tabs-spaces/">
+<i class="fas fa-remove-format" mr-2"> </i>
+탭을 공백으로 변환 </a>
+</li>
+
+<li class="list-group-item">
+<a href="https://toolzdot.com/ko/text-list/convert-spaces-tabs/">
+<i class="fas fa-strikethrough" mr-2"> </i>
+공간을 탭으로 변환 </a>
+</li>
+
+
+<li class="list-group-item">
+<a href="https://toolzdot.com/ko/text-list/remove-empty-line/">
+<i class="fas fa-tasks" mr-2"></i>
+빈 줄 제거 </a>
+</li>
+
+<li class="list-group-item">
+<a href="https://toolzdot.com/ko/text-list/repeat-text/">
+<i class="far fa-sticky-note" mr-2"></i>
+텍스트 반복 </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<footer class="pt-4 my-md-5 pt-md-5 border-top mt-5">
+<div class="row">
+<div class="col-12 col-md">
+<img class="logo-light" src="https://toolzdot.com/assets/images/logo-light.png" height="28" width="130" alt="ToolzDot">
+<img class="logo-dark" src="https://toolzdot.com/assets/images/logo-dark.png" height="28" width="130" alt="ToolzDot">
+<p class="pt-3 text-muted">ToolzDot으로 더 짧은 시간에 더 많은 작업을 수행하세요. 모든 도구를 한 곳에서 사용하면 더 빠르고 똑똑하게 작업할 수 있습니다.</p>
+<p>
+<a href="https://www.facebook.com/toolzdot" target="_blank"><i class="fab fa-facebook-square fa-2x social"></i></a>
+<a href="https://twitter.com/toolzdot" target="_blank"><i class="fab fa-twitter-square fa-2x social"></i></a>
+<a href="https://pinterest.com/toolzdot" target="_blank"><i class="fab fa-pinterest-square fa-2x social"></i></a>
+<a href="https://instagram.com/toolzdot" target="_blank"><i class="fab fa-instagram-square fa-2x social"></i></a>
+<a href="https://www.linkedin.com/in/toolzdot/" target="_blank"><i class="fab fa-linkedin fa-2x social"></i></a>
+</p>
+</div>
+<div class="col-6 col-md">
+<h4>페이지</h4>
+<ul class="list-unstyled text-small">
+<li><a href="https://toolzdot.com/about/" class="text-muted">회사 소개</a></li>
+<li><a href="https://toolzdot.com/contact/" class="text-muted">문의하기</a></li>
+<li><a href="https://toolzdot.com/privacy/" class="text-muted">개인정보 보호정책</a></li>
+<li><a href="https://toolzdot.com/toc/" class="text-muted">이용약관</a></li>
+<li><a href="http://www.dmca.com/Protection/Status.aspx?ID=111005f3-96da-4f46-9ab2-aa8e7388a268" title="DMCA.com Protection Status" class="dmca-badge footer-link"> <img src="https://images.dmca.com/Badges/dmca-badge-w100-5x1-01.png?ID=111005f3-96da-4f46-9ab2-aa8e7388a268" height="20px" width="100px" alt="DMCA.com Protection Status" /></a> <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js" type="3349353ba2d7db1695a511d7-text/javascript"> </script></li>
+</ul>
+</div>
+<div class="col-6 col-md">
+<h4>서비스</h4>
+<ul class="list-unstyled text-small">
+<li><a href="https://toolzdot.com/ko/twitter-trends/" class="text-muted">트위터 트렌드</a></li>
+<li><a href="https://toolzdot.com/ko/yt-trends/" class="text-muted">YouTube 트렌드</a></li>
+<li><a href="https://toolzdot.com/ko/hashtag-generator/" class="text-muted">인스타그램 해시태그 생성기</a></li>
+<li><a href="https://toolzdot.com/ko/pinterest-hashtag-generator/" class="text-muted">Pinterest 해시태그 생성기</a></li>
+</ul>
+</div>
+<div class="col-6 col-md">
+<h4>도구</h4>
+<ul class="list-unstyled text-small">
+<li><a href="https://toolzdot.com/ko/text-list/" class="text-muted">텍스트 및 목록</a></li>
+<li><a href="https://toolzdot.com/ko/random/" class="text-muted">무작위</a></li>
+<li><a href="https://toolzdot.com/ko/counter/" class="text-muted">카운터</a></li>
+<li><a href="https://toolzdot.com/ko/generator/" class="text-muted">발전기</a></li>
+<li><a href="https://toolzdot.com/ko/colors/" class="text-muted">색상</a></li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="col text-center">
+<small class="d-block mb-3 text-muted">저작권 © 2022 ToolzDot</small>
+</div>
+</div>
+</footer>
+</div>
+<script type="3349353ba2d7db1695a511d7-text/javascript">
+        var lang = "https://toolzdot.com/ko/text-list/remove-line-break/ko/";
+        var page = "site_tool_text_remove_line_break";
+        var rate_url = "https://toolzdot.com/rating/";
+    </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="3349353ba2d7db1695a511d7-text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" type="3349353ba2d7db1695a511d7-text/javascript"></script>
+<script src="https://toolzdot.com/assets/js/app.js?v=4.1" type="3349353ba2d7db1695a511d7-text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.9/clipboard.min.js" type="3349353ba2d7db1695a511d7-text/javascript"></script>
+<script type="3349353ba2d7db1695a511d7-text/javascript">
+    $(document).ready(function(){
+        
+        const clipboard = new ClipboardJS('.copyBtn'); 
+        const srcText = $('#srcText');
+        const convertedText = $('#convertedText');
+
+        
+        $('#toolFooterGenBtn').click(function () {
+            process();
+        })
+
+        function process(){
+            
+
+            var lines = $('#srcText').val().split('\n');
+            var new_lines = "";
+
+            var filtered_lines = lines.filter(function (el) {
+                return el != "";
+            });
+
+            if( $('#option_style_rem').is(":checked") ){
+
+                filtered_lines = filtered_lines.map( function(el, i){
+                    return el.replace(/\n/g, "");
+                });
+
+                $('#convertedText').val( filtered_lines.join('') );
+
+            }else{
+
+                if( $('#option_period').is(":checked") ){
+                    
+                    filtered_lines = filtered_lines.map( function(el, i){
+
+                        if( el.match(/\.$/g) ){
+                            return el;
+                        }else{
+                            return el + ".";
+                        }
+                    });
+
+                }
+
+                if( $('#option_line').is(":checked") ){
+                    var i = 1;
+
+                    while (i < filtered_lines.length) {
+                        filtered_lines.splice(i, 0, '');
+                        i += 2;
+                    }
+
+                }
+
+                if( $('#option_capital').is(":checked") ){
+                    
+                    filtered_lines = filtered_lines.map( function(el, i){
+                        return el.charAt(0).toUpperCase() + el.slice(1);
+                    });
+
+                }
+
+                if( $('#option_tab').is(":checked") ){
+                    
+                    filtered_lines = filtered_lines.map( function(el, i){
+
+                        if( el.match(/^\t/g) ){
+                            return el;
+                        }else{
+                            return "\t" + el;
+                        }
+                    });
+
+                }
+
+                $('#convertedText').val( filtered_lines.join('\n') );
+            }
+        }
+
+        $(".option_style_group input:radio").on('change', function(){
+
+            if( $('#option_style_rem').is(":checked") ){
+                
+                $('#option_line').parent().parent().addClass('d-none');
+                $('#option_capital').parent().parent().addClass('d-none');
+                $('#option_period').parent().parent().addClass('d-none');
+                $('#option_tab').parent().parent().addClass('d-none');
+
+            }
+
+            if( $('#option_style_preserve').is(":checked") ){
+                
+                $('#option_line').parent().parent().removeClass('d-none');
+                $('#option_capital').parent().parent().removeClass('d-none');
+                $('#option_period').parent().parent().removeClass('d-none');
+                $('#option_tab').parent().parent().removeClass('d-none');
+
+            }
+        });
+
+        
+    });
+
+</script> <script src="https://toolzdot.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="3349353ba2d7db1695a511d7-|49" defer=""></script></body>
+
+<!-- Mirrored from toolzdot.com/ko/text-list/remove-line-break/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Nov 2022 08:12:50 GMT -->
+</html>

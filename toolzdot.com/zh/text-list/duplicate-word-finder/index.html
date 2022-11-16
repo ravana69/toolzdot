@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto">
+
+<!-- Mirrored from toolzdot.com/zh/text-list/duplicate-word-finder/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Nov 2022 07:12:07 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="google" content="notranslate" />
+<meta name="robots" content="index, follow" />
+<meta name="revisit-after" content="1 days" />
+
+<link rel="preload" href="../../../assets/css/app8c94.css?v=4.1" as="style">
+<link rel="preload" href="../../../assets/js/app8c94.js?v=4.1" as="script">
+<link rel="preconnect" href="https://code.jquery.com/">
+<link rel="dns-prefetch" href="https://code.jquery.com/">
+<link rel="preconnect" href="https://cdn.jsdelivr.net/">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net/">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com/">
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
+
+<link rel="stylesheet" href="../../../../cdn.jsdelivr.net/npm/bootstrap%404.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="../../../../cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="../../../assets/css/app8c94.css?v=4.1" rel="stylesheet">
+
+<title>重复单词查找器 – ToolzDot</title>
+
+<meta name="description" content="Duplicate Word Finder 是一个很好的工具，可以用来确定你所拥有的文本是否真的独一无二！它也可以很好地检查你写作的原创性。">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ToolzDot" />
+<meta property="og:url" content="index.html">
+<meta property="og:title" content="重复单词查找器 – ToolzDot">
+<meta property="og:description" content="Duplicate Word Finder 是一个很好的工具，可以用来确定你所拥有的文本是否真的独一无二！它也可以很好地检查你写作的原创性。">
+<meta property="og:image" content="../../../assets/images/text-lists/duplicate-word-finder.jpg">
+<meta itemprop="image" content="../../../assets/images/text-lists/duplicate-word-finder.jpg">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="index.html">
+<meta property="twitter:title" content="重复单词查找器 – ToolzDot">
+<meta property="twitter:description" content="Duplicate Word Finder 是一个很好的工具，可以用来确定你所拥有的文本是否真的独一无二！它也可以很好地检查你写作的原创性。">
+<meta property="twitter:image" content="../../../assets/images/text-lists/duplicate-word-finder.jpg">
+
+<link rel="canonical" href="index.html">
+<link rel="alternate" href="../../../text-list/duplicate-word-finder/index.html" hreflang="x-default" />
+<link rel="alternate" href="../../../text-list/duplicate-word-finder/index.html" hreflang="en" />
+<link rel="alternate" href="../../../bn/text-list/duplicate-word-finder/index.html" hreflang="bn" />
+<link rel="alternate" href="index.html" hreflang="zh" />
+<link rel="alternate" href="../../../fr/text-list/duplicate-word-finder/index.html" hreflang="fr" />
+<link rel="alternate" href="../../../de/text-list/duplicate-word-finder/index.html" hreflang="de" />
+<link rel="alternate" href="../../../hi/text-list/duplicate-word-finder/index.html" hreflang="hi" />
+<link rel="alternate" href="../../../hu/text-list/duplicate-word-finder/index.html" hreflang="hu" />
+<link rel="alternate" href="../../../id/text-list/duplicate-word-finder/index.html" hreflang="id" />
+<link rel="alternate" href="../../../it/text-list/duplicate-word-finder/index.html" hreflang="it" />
+<link rel="alternate" href="../../../ko/text-list/duplicate-word-finder/index.html" hreflang="ko" />
+<link rel="alternate" href="../../../pl/text-list/duplicate-word-finder/index.html" hreflang="pl" />
+<link rel="alternate" href="../../../pt/text-list/duplicate-word-finder/index.html" hreflang="pt" />
+<link rel="alternate" href="../../../ru/text-list/duplicate-word-finder/index.html" hreflang="ru" />
+<link rel="alternate" href="../../../es/text-list/duplicate-word-finder/index.html" hreflang="es" />
+<link rel="alternate" href="../../../sw/text-list/duplicate-word-finder/index.html" hreflang="sw" />
+<link rel="alternate" href="../../../te/text-list/duplicate-word-finder/index.html" hreflang="te" />
+<link rel="alternate" href="../../../th/text-list/duplicate-word-finder/index.html" hreflang="th" />
+<link rel="alternate" href="../../../uk/text-list/duplicate-word-finder/index.html" hreflang="uk" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="../../../assets/images/fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../../../assets/images/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="../../../assets/images/fav/favicon-16x16.png">
+<link rel="manifest" href="../../../assets/images/fav/site.webmanifest">
+<link rel="mask-icon" href="../../../index.html" color="#5bbad5">
+<link rel="shortcut icon" href="../../../assets/images/fav/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="../../../assets/images/fav/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V709D1W8GB" type="1327160bb025a4093c92e1d6-text/javascript"></script>
+<script type="1327160bb025a4093c92e1d6-text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-V709D1W8GB');
+    </script>
+<script async src="../../../../pagead2.googlesyndication.com/pagead/js/f939e.txt?client=ca-pub-2505158782154953" crossorigin="anonymous" type="1327160bb025a4093c92e1d6-text/javascript"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+<div class="container">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<a class="navbar-brand" href="../../index.html">
+<img class="logo-light" src="../../../assets/images/logo-light.png" height="28" width="130" alt="ToolzDot">
+<img class="logo-dark" src="../../../assets/images/logo-dark.png" height="28" width="130" alt="ToolzDot">
+</a>
+<ul class="navbar-nav lang-menu"><li class="nav-item dropdown mr-3"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLang" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="d-inline">zh</span></a><div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownLang"><a class="dropdown-item" href="../../../text-list/duplicate-word-finder/index.html"><span class="">english</span></a><a class="dropdown-item" href="../../../bn/text-list/duplicate-word-finder/index.html"><span class="">bengali</span></a><a class="dropdown-item" href="index.html"><span class="">chinese</span></a><a class="dropdown-item" href="../../../fr/text-list/duplicate-word-finder/index.html"><span class="">french</span></a><a class="dropdown-item" href="../../../de/text-list/duplicate-word-finder/index.html"><span class="">german</span></a><a class="dropdown-item" href="../../../hi/text-list/duplicate-word-finder/index.html"><span class="">hindi</span></a><a class="dropdown-item" href="../../../hu/text-list/duplicate-word-finder/index.html"><span class="">hungarian</span></a><a class="dropdown-item" href="../../../id/text-list/duplicate-word-finder/index.html"><span class="">indonesian</span></a><a class="dropdown-item" href="../../../it/text-list/duplicate-word-finder/index.html"><span class="">italian</span></a><a class="dropdown-item" href="../../../ko/text-list/duplicate-word-finder/index.html"><span class="">korean</span></a><a class="dropdown-item" href="../../../pl/text-list/duplicate-word-finder/index.html"><span class="">polish</span></a><a class="dropdown-item" href="../../../pt/text-list/duplicate-word-finder/index.html"><span class="">portuguese</span></a><a class="dropdown-item" href="../../../ru/text-list/duplicate-word-finder/index.html"><span class="">russian</span></a><a class="dropdown-item" href="../../../es/text-list/duplicate-word-finder/index.html"><span class="">spanish</span></a><a class="dropdown-item" href="../../../sw/text-list/duplicate-word-finder/index.html"><span class="">swahili</span></a><a class="dropdown-item" href="../../../te/text-list/duplicate-word-finder/index.html"><span class="">telugu</span></a><a class="dropdown-item" href="../../../th/text-list/duplicate-word-finder/index.html"><span class="">thai</span></a><a class="dropdown-item" href="../../../uk/text-list/duplicate-word-finder/index.html"><span class="">ukrainian</span></a></div></li><li class="nav-item">
+<a href="#" class="nav-link dark-light" title="dark-mode">
+<i class="fa fa-moon" id="ico-moon"> </i>
+<i class="fa fa-sun" id="ico-sun"> </i>
+</a>
+</li></ul>
+</div>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+<div class="container">
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="textListDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+文本和列表 </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="textListDropdown">
+<a class="dropdown-item" href="../random-fake-word-generator/index.html">
+假词生成器 </a>
+<a class="dropdown-item" href="../convert-case/index.html">
+转换大小写 </a>
+<a class="dropdown-item" href="../generate-synonym/index.html">
+生成同义词 </a>
+<a class="dropdown-item" href="../roman-numerals-generator/index.html">
+罗马数字生成器 </a>
+<a class="dropdown-item" href="index.html">
+重复单词查找器 </a>
+<a class="dropdown-item" href="../random-letter-generator/index.html">
+随机字母生成器 </a>
+<a class="dropdown-item" href="../zero-width-space-bookmarklet/index.html">
+零宽度空间书签 </a>
+<a class="dropdown-item" href="../reverse-list/index.html">
+反向列表 </a>
+<a class="dropdown-item" href="../list-randomizer/index.html">
+列表随机化器 </a>
+<a class="dropdown-item" href="../sort-list/index.html">
+排序列表 </a>
+<a class="dropdown-item" href="../add-text-each-line/index.html">
+每行添加文本 </a>
+<a class="dropdown-item" href="../remove-white-space/index.html">
+删除多余的空白 </a>
+<a class="dropdown-item" href="../convert-tabs-spaces/index.html">
+将制表符转换为空格 </a>
+<a class="dropdown-item" href="../convert-spaces-tabs/index.html">
+将空格转换为制表符 </a>
+<a class="dropdown-item" href="../remove-line-break/index.html">
+删除换行符 </a>
+<a class="dropdown-item" href="../remove-empty-line/index.html">
+删除空行 </a>
+<a class="dropdown-item" href="../repeat-text/index.html">
+重复文本 </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="randomDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+随机 </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="randomDropdown">
+<a class="dropdown-item" href="../../random/bible-verse-generator/index.html">
+随机圣经经文生成器 </a>
+<a class="dropdown-item" href="../../random/wikipedia-random-article-and-search/index.html">
+随机维基百科文章 </a>
+<a class="dropdown-item" href="../../random/name-picker/index.html">
+随机名称选择器 </a>
+<a class="dropdown-item" href="../../random/food-generator/index.html">
+随机随机食物生成器 </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="counterDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+计数器 </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="counterDropdown">
+<a class="dropdown-item" href="../../counter/spacebar-counter/index.html">
+空格键计数器 </a>
+<a class="dropdown-item" href="../../counter/webpage-word/index.html">
+网页字数计数器 </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="socialDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+社交媒体 </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="socialDropdown">
+<a class="dropdown-item" href="../../hashtag-generator/index.html">
+Instagram 标签生成器 </a>
+<a class="dropdown-item" href="../../instagram-line-break/index.html">
+Instagram 换行生成器 </a>
+<a class="dropdown-item" href="../../pinterest-hashtag-generator/index.html">
+Pinterest Hashtag 生成器 </a>
+<a class="dropdown-item" href="../../twitter-trends/index.html">
+推特趋势 </a>
+<a class="dropdown-item" href="../../yt-trends/index.html">
+YouTube 趋势 </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="generatorsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+发电机 </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="generatorsDropdown">
+<a class="dropdown-item" href="../../generator/password-generator/index.html">
+密码生成器 </a>
+<a class="dropdown-item" href="../../generator/api-key-generator/index.html">
+API 密钥生成器 </a>
+<a class="dropdown-item" href="../../generator/mailto-link-generator/index.html">
+邮件链接生成器 </a>
+<a class="dropdown-item" href="../../generator/lorem-ipsum-generator/index.html">
+Lorem Ipsum 生成器 </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="colorsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+颜色 </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="colorsDropdown">
+<a class="dropdown-item" href="../../colors/lighten-color/index.html">
+淡化颜色 </a>
+<a class="dropdown-item" href="../../colors/darken-color/index.html">
+深色 </a>
+<a class="dropdown-item" href="../../colors/change-color-saturation/index.html">
+改变饱和度 </a>
+<a class="dropdown-item" href="../../colors/invert-color/index.html">
+反转颜色 </a>
+<a class="dropdown-item" href="../../colors/grayscale-color/index.html">
+灰度颜色 </a>
+<a class="dropdown-item" href="../../colors/random-color/index.html">
+随机颜色生成器 </a>
+<a class="dropdown-item" href="../../colors/blend-colors/index.html">
+混合颜色 </a>
+<a class="dropdown-item" href="../../colors/change-color-hue/index.html">
+改变颜色色调 </a>
+<a class="dropdown-item" href="../../colors/color-shades-generator/index.html">
+颜色阴影生成器 </a>
+<a class="dropdown-item" href="../../colors/random-pastel-color-generator/index.html">
+柔和的颜色生成器 </a>
+<a class="dropdown-item" href="../../colors/image-color-palette-extractor/index.html">
+调色板提取器 </a>
+<a class="dropdown-item" href="../../colors/complementary-color/index.html">
+互补色 </a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</nav><div class="container">
+<div class="row">
+<div class="col-12">
+<div class="td-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+<h1 class="py-3">重复单词查找器</h1>
+<p class="text-muted">Duplicate Word Finder 是一个很好的工具，可以用来确定你所拥有的文本是否真的独一无二！它也可以很好地检查你写作的原创性。</p>
+</div>
+</div>
+<div class="col-12 mb-3 mt-3">
+
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item">
+<a href="../../index.html">
+家
+</a>
+</li>
+<li class="breadcrumb-item">
+<a href="../index.html">
+文本和列表
+</a>
+</li>
+<li class="breadcrumb-item active">重复单词查找器</li>
+</ol>
+<script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [{
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "家",
+                            "item": "https://toolzdot.com/zh/"
+                        },{
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "文本和列表",
+                            "item": "https://toolzdot.com/zh/text-list/"
+                        },{
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "重复单词查找器"
+                    }]
+                }
+                </script>
+</nav>
+
+<div class="tdotad ">
+<script async src="../../../../pagead2.googlesyndication.com/pagead/js/f939e.txt?client=ca-pub-2505158782154953" crossorigin="anonymous" type="1327160bb025a4093c92e1d6-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2505158782154953" data-ad-slot="6903139835" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script type="1327160bb025a4093c92e1d6-text/javascript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="card tb-green mt-3">
+<div class="card-body">
+<div class="row">
+<div class="col-12">
+<div class="row">
+<div class="col">
+<div class="form-group">
+<input type="range" class="form-control-range" id="length" type="range" min="1" max="10" value="4">
+<label for="length" class="text-center output-label">最小字长： <output>4</output></label>
+</div>
+</div>
+<div class="col d-flex justify-content-center">
+<div class="form-check">
+<input class="form-check-input" type="checkbox" id="spellcheck" checked>
+<label class="form-check-label" for="spellcheck">
+拼写检查 </label>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div class="form-group">
+<label for="wordContainer">输入你的段落</label>
+<div class="text-wrapper">
+<textarea class="form-control" id="wordContainer" rows="7">
+Just select and paste your text by pressing Ctrl+V or ⌘+V.
+
+In the top there is a slider that allows you to adjust the minimum length of words to look for. By default it’s value is 4. So it will help to remove the words like 'the' , 'for', 'and' etc. don't affect the analysis. You can see duplicate words below it but they are highlighted in red. Sort your list of keywords by frequency, with the most common appearing first. If you want to deselect a keyword, click it.
+
+You can edit your text here. Duplicate words will be detected in real time. When you're finished editing, you can copy the result. You can also turn off the spell-checker if you don't need it.
+
+You often find yourself sending emails or messages that are two, three sentences long. This is when you commit an unintentional word repetition after hitting send. This tool comes in handy for such cases, and you're free to use "repeat" or "retweet" again while typing.
+                                    </textarea>
+<div id="highlights"></div>
+</div>
+</div>
+<div class="form-group text-center">
+<button class="btn btn-info btn-sm copyBtn" data-clipboard-action="copy" data-clipboard-target="#wordContainer"><i class="far fa-copy"></i> 复制</button>
+<button class="btn btn-danger btn-sm" id="clrBtn"><i class="far fa-trash-alt"></i> 清除</button>
+</div>
+</div>
+<div class="col-md-4">
+<div class="side-list">
+<ul id="list" class="list-group"></ul>
+</div>
+</div>
+<div class="col-12">
+<div class="tdotad ">
+<script async src="../../../../pagead2.googlesyndication.com/pagead/js/f939e.txt?client=ca-pub-2505158782154953" crossorigin="anonymous" type="1327160bb025a4093c92e1d6-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2505158782154953" data-ad-slot="4096476695" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script type="1327160bb025a4093c92e1d6-text/javascript">
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+</div> </div>
+</div>
+<template>
+<li class="item list-group-item">
+<label class="d-flexalign-items-center">
+<input class="d-none" type="checkbox">
+<span class="badge badge-primary badge-pill count mr-3"></span>
+<span class="word"></span>
+</label>
+</li>
+</template>
+<div class="row">
+
+<div class="col-12 text-center">
+<div class="jumbotron mt-5">
+
+<div class="rating">
+<h2>我们的工具有多大用处？</h2>
+<p class="text-muted">点击下面的一颗星来给我们的工具打分，满分 5 星</p>
+ <div class="rating-star">
+<ul class="text-center">
+<li class="star fix" data-id="1"><i class="fa fa-star" aria-hidden="true"></i></li><li class="star fix" data-id="2"><i class="fa fa-star" aria-hidden="true"></i></li><li class="star fix" data-id="3"><i class="fa fa-star" aria-hidden="true"></i></li><li class="star" data-id="4"><i class="fa fa-star" aria-hidden="true"></i></li><li class="star" data-id="5"><i class="fa fa-star" aria-hidden="true"></i></li> </ul>
+</div>
+<p>
+平均评分: <span class="rating-val">3.5</span> / 5
+投票数: <span class="vote-count">2</span>
+</p>
+<div class="alert alert-success rate_msg d-none">感谢您的评分！</div>
+<div class="alert alert-warning rate_rated d-none">你已经评分了！</div>
+</div>
+<script type="application/ld+json">{
+                                    "@context": "https://schema.org/",
+                                    "@type": "SoftwareApplication",
+                                    "name": "重复单词查找器",
+                                    "operatingSystem": "all",
+                                    "applicationCategory": "UtilitiesApplication", 
+                                    "aggregateRating": {
+                                    "@type": "AggregateRating",
+                                        "ratingValue": "3.5",
+                                        "ratingCount": "2",
+                                        "bestRating": "5",
+                                        "worstRating": "1"
+                                    },
+                                    "offers": {
+                                        "@type": "Offer",
+                                        "price": "0", 
+                                        "priceCurrency": "USD"
+                                    }
+                                }</script>
+
+</div>
+</div>
+</div>
+<div class="tdotad desktop">
+<script async src="../../../../pagead2.googlesyndication.com/pagead/js/f939e.txt?client=ca-pub-2505158782154953" crossorigin="anonymous" type="1327160bb025a4093c92e1d6-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2505158782154953" data-ad-slot="6903139835" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script type="1327160bb025a4093c92e1d6-text/javascript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div> 
+<div class="row mt-5">
+
+<div class="col-lg-8 article">
+<h2>什么是重复词查找器？</h2>
+<p>重复词查找器是一种软件，可帮助您查找和删除文档中的重复词。它可用于提高文本的可读性和清晰度。</p>
+<p>有三种方法可以使用重复单词查找器：
+<ul>
+<li>您可以通过选择相关单词的每次出现来手动搜索重复项。</li>
+<li>您可以使用自动工具，它会扫描您的文档以查找所有出现的相同单词。</li>
+<li>您可以使用在线服务，它会扫描您的文档并突出显示找到的任何重复项。</li>
+</ul>
+</p>
+<h2>重复词查找器如何帮助您写作？</h2>
+<p>重复的单词读起来很麻烦。它们会打乱句子的流畅性，并且会分散注意力。</p>
+<p>重复单词查找器可以通过在文档中查找重复单词并突出显示它们来帮助您进行写作。然后，您可以从文本文档中删除重复项，这将使其更简洁、更易于阅读。</p>
+<h2></h2>
+<section class="faq mb-5">
+<h2>常见问题：</h2>
+
+<div id="accordion" class="my-3" itemscope itemtype="https://schema.org/FAQPage">
+<div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div class="card-header" id="faq0">
+<h3 class="mb-0" itemprop="name">
+<button class="btn collapsed" data-toggle="collapse" data-target="#collapse0" aria-expanded="false" aria-controls="collapse0">
+什么是重复词查找器？
+</button>
+</h3>
+</div>
+<div id="collapse0" class="collapse" aria-labelledby="faq0" data-parent="#accordion">
+<div class="card-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Duplicate Word Finder 是一款免费工具，只搜索英语中的重复项 </p>
+</div>
+</div>
+</div>
+<div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div class="card-header" id="faq1">
+<h3 class="mb-0" itemprop="name">
+<button class="btn collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+它是如何工作的？
+</button>
+</h3>
+</div>
+<div id="collapse1" class="collapse" aria-labelledby="faq1" data-parent="#accordion">
+<div class="card-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">输入您的文章并选择您的单词长度。我会自动显示相同的单词。 </p>
+</div>
+</div>
+</div>
+<div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div class="card-header" id="faq2">
+<h3 class="mb-0" itemprop="name">
+<button class="btn collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+我可以使用 Duplicate Word Finder 来查找一个单词的多个实例吗？
+</button>
+</h3>
+</div>
+<div id="collapse2" class="collapse" aria-labelledby="faq2" data-parent="#accordion">
+<div class="card-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">是的，您可以根据单词长度获取一个单词的多个实例。 </p>
+</div>
+</div>
+</div>
+<div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div class="card-header" id="faq4">
+<h3 class="mb-0" itemprop="name">
+<button class="btn collapsed" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+免费吗？
+</button>
+</h3>
+</div>
+<div id="collapse4" class="collapse" aria-labelledby="faq4" data-parent="#accordion">
+<div class="card-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">是的，这个工具是完全免费的。 </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<p><i class="fas fa-hashtag"></i> 关键字:</b> 查重词，在线查找重词，查重词</p>
+</div>
+
+<div class="col-lg-4">
+<div class="card">
+<div class="card-body">
+<h4 class="card-title text-center">相关工具</h2>
+<ul class="list-group list-group-flush">
+
+<li class="list-group-item">
+<a href="../random-fake-word-generator/index.html">
+<i class="far fa-file-word" mr-2"></i>
+假词生成器 </a>
+</li>
+
+<li class="list-group-item">
+<a href="../convert-case/index.html">
+<i class="fas fa-font" mr-2"></i>
+转换大小写 </a>
+</li>
+
+<li class="list-group-item">
+<a href="../generate-synonym/index.html">
+<i class="far fa-clone" mr-2"></i>
+生成同义词 </a>
+</li>
+
+<li class="list-group-item">
+<a href="../roman-numerals-generator/index.html">
+<i class="fas fa-italic" mr-2"></i>
+罗马数字生成器 </a>
+</li>
+
+<li class="list-group-item">
+<a href="../random-letter-generator/index.html">
+<i class="fab fa-acquisitions-incorporated" mr-2"></i>
+随机字母生成器 </a>
+</li>
+
+<li class="list-group-item">
+<a href="../zero-width-space-bookmarklet/index.html">
+<i class="fab fa-autoprefixer" mr-2"></i>
+零宽度空间书签 </a>
+</li>
+
+<li class="list-group-item">
+<a href="../reverse-list/index.html">
+<i class="fas fa-sort-numeric-down-alt" mr-2"></i>
+反向列表 </a>
+</li>
+
+<li class="list-group-item">
+<a href="../list-randomizer/index.html">
+<i class="fas fa-stream" mr-2"></i>
+列表随机化器 </a>
+</li>
+
+<li class="list-group-item">
+<a href="../sort-list/index.html">
+<i class="fas fa-list-ol" mr-2"></i>
+排序列表 </a>
+</li>
+
+<li class="list-group-item">
+<a href="../add-text-each-line/index.html">
+<i class="fas fa-grip-lines" mr-2"></i>
+每行添加文本 </a>
+</li>
+
+<li class="list-group-item">
+<a href="../remove-white-space/index.html">
+<i class="fab fa-perbyte" mr-2"></i>
+删除多余的空白 </a>
+</li>
+
+<li class="list-group-item">
+<a href="../convert-tabs-spaces/index.html">
+<i class="fas fa-remove-format" mr-2"> </i>
+将制表符转换为空格 </a>
+</li>
+
+<li class="list-group-item">
+<a href="../convert-spaces-tabs/index.html">
+<i class="fas fa-strikethrough" mr-2"> </i>
+将空格转换为制表符 </a>
+</li>
+
+<li class="list-group-item">
+<a href="../remove-line-break/index.html">
+<i class="fas fa-level-down-alt" mr-2"></i>
+删除换行符 </a>
+</li>
+
+<li class="list-group-item">
+<a href="../remove-empty-line/index.html">
+<i class="fas fa-tasks" mr-2"></i>
+删除空行 </a>
+</li>
+
+<li class="list-group-item">
+<a href="../repeat-text/index.html">
+<i class="far fa-sticky-note" mr-2"></i>
+重复文本 </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="container">
+<footer class="pt-4 my-md-5 pt-md-5 border-top mt-5">
+<div class="row">
+<div class="col-12 col-md">
+<img class="logo-light" src="../../../assets/images/logo-light.png" height="28" width="130" alt="ToolzDot">
+<img class="logo-dark" src="../../../assets/images/logo-dark.png" height="28" width="130" alt="ToolzDot">
+<p class="pt-3 text-muted">使用 ToolzDot 在更短的时间内完成更多工作。将所有工具集中在一个地方，您将能够更快、更智能地工作。</p>
+<p>
+<a href="https://www.facebook.com/toolzdot" target="_blank"><i class="fab fa-facebook-square fa-2x social"></i></a>
+<a href="https://twitter.com/toolzdot" target="_blank"><i class="fab fa-twitter-square fa-2x social"></i></a>
+<a href="https://pinterest.com/toolzdot" target="_blank"><i class="fab fa-pinterest-square fa-2x social"></i></a>
+<a href="https://instagram.com/toolzdot" target="_blank"><i class="fab fa-instagram-square fa-2x social"></i></a>
+<a href="https://www.linkedin.com/in/toolzdot/" target="_blank"><i class="fab fa-linkedin fa-2x social"></i></a>
+</p>
+</div>
+<div class="col-6 col-md">
+<h4>页面</h4>
+<ul class="list-unstyled text-small">
+<li><a href="../../../about/index.html" class="text-muted">关于我们</a></li>
+<li><a href="../../../contact/index.html" class="text-muted">联系我们</a></li>
+<li><a href="../../../privacy/index.html" class="text-muted">隐私政策</a></li>
+<li><a href="../../../toc/index.html" class="text-muted">条款和条件</a></li>
+<li><a href="http://www.dmca.com/Protection/Status.aspx?ID=111005f3-96da-4f46-9ab2-aa8e7388a268" title="DMCA.com Protection Status" class="dmca-badge footer-link"> <img src="../../../../images.dmca.com/Badges/dmca-badge-w100-5x1-01e6b4.png?ID=111005f3-96da-4f46-9ab2-aa8e7388a268" height="20px" width="100px" alt="DMCA.com Protection Status" /></a> <script src="../../../../images.dmca.com/Badges/DMCABadgeHelper.min.js" type="1327160bb025a4093c92e1d6-text/javascript"> </script></li>
+</ul>
+</div>
+<div class="col-6 col-md">
+<h4>服务</h4>
+<ul class="list-unstyled text-small">
+<li><a href="../../twitter-trends/index.html" class="text-muted">推特趋势</a></li>
+<li><a href="../../yt-trends/index.html" class="text-muted">YouTube 趋势</a></li>
+<li><a href="../../hashtag-generator/index.html" class="text-muted">Instagram 标签生成器</a></li>
+<li><a href="../../pinterest-hashtag-generator/index.html" class="text-muted">Pinterest Hashtag 生成器</a></li>
+</ul>
+</div>
+<div class="col-6 col-md">
+<h4>工具</h4>
+<ul class="list-unstyled text-small">
+<li><a href="../index.html" class="text-muted">文本和列表</a></li>
+<li><a href="../../random/index.html" class="text-muted">随机</a></li>
+<li><a href="../../counter/index.html" class="text-muted">计数器</a></li>
+<li><a href="../../generator/index.html" class="text-muted">发电机</a></li>
+<li><a href="../../colors/index.html" class="text-muted">颜色</a></li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="col text-center">
+<small class="d-block mb-3 text-muted">版权所有 © 2022 ToolzDot</small>
+</div>
+</div>
+</footer>
+</div>
+<script type="1327160bb025a4093c92e1d6-text/javascript">
+        var lang = "zh/index.html";
+        var page = "site_tool_text_duplicate_word";
+        var rate_url = "../../../rating/index.html";
+    </script>
+<script src="../../../../code.jquery.com/jquery-3.6.0.min.js" type="1327160bb025a4093c92e1d6-text/javascript"></script>
+<script src="../../../../cdn.jsdelivr.net/npm/bootstrap%404.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" type="1327160bb025a4093c92e1d6-text/javascript"></script>
+<script src="../../../assets/js/app8c94.js?v=4.1" type="1327160bb025a4093c92e1d6-text/javascript"></script>
+<script src="../../../../cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.9/clipboard.min.js" type="1327160bb025a4093c92e1d6-text/javascript"></script>
+<script type="1327160bb025a4093c92e1d6-text/javascript">
+    $(document).ready(function(){
+        
+        var clipboard = new ClipboardJS('.copyBtn'); 
+        "use strict";"object"!=typeof window.CP&&(window.CP={}),window.CP.PenTimer={programNoLongerBeingMonitored:!1,timeOfFirstCallToShouldStopLoop:0,_loopExits:{},_loopTimers:{},START_MONITORING_AFTER:2e3,STOP_ALL_MONITORING_TIMEOUT:5e3,MAX_TIME_IN_LOOP_WO_EXIT:2200,exitedLoop:function(o){this._loopExits[o]=!0},shouldStopLoop:function(o){if(this.programKilledSoStopMonitoring)return!0;if(this.programNoLongerBeingMonitored)return!1;if(this._loopExits[o])return!1;var t=this._getTime();if(0===this.timeOfFirstCallToShouldStopLoop)return this.timeOfFirstCallToShouldStopLoop=t,!1;var i=t-this.timeOfFirstCallToShouldStopLoop;if(i<this.START_MONITORING_AFTER)return!1;if(i>this.STOP_ALL_MONITORING_TIMEOUT)return this.programNoLongerBeingMonitored=!0,!1;try{this._checkOnInfiniteLoop(o,t)}catch(o){return this._sendErrorMessageToEditor(),this.programKilledSoStopMonitoring=!0,!0}return!1},_sendErrorMessageToEditor:function(){try{if(this._shouldPostMessage()){var o={action:"infinite-loop",line:this._findAroundLineNumber()};parent.postMessage(JSON.stringify(o),"*")}else this._throwAnErrorToStopPen()}catch(o){this._throwAnErrorToStopPen()}},_shouldPostMessage:function(){return document.location.href.match(/boomerang/)},_throwAnErrorToStopPen:function(){throw"We found an infinite loop in your Pen. We've stopped the Pen from running. Please correct it or contact support@codepen.io."},_findAroundLineNumber:function(){var o=new Error,t=0;if(o.stack){var i=o.stack.match(/boomerang\S+:(\d+):\d+/);i&&(t=i[1])}return t},_checkOnInfiniteLoop:function(o,t){if(!this._loopTimers[o])return this._loopTimers[o]=t,!1;var i=t-this._loopTimers[o];if(i>this.MAX_TIME_IN_LOOP_WO_EXIT)throw"Infinite Loop found on loop: "+o},_getTime:function(){return+new Date}},window.CP.shouldStopExecution=function(o){var t=window.CP.PenTimer.shouldStopLoop(o);return t===!0&&console.warn("[CodePen]: An infinite loop (or a loop taking too long) was detected, so we stopped its execution. Sorry!"),t},window.CP.exitedLoop=function(o){window.CP.PenTimer.exitedLoop(o)};
+
+        const isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+        const isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+
+        const spellcheck = $("#spellcheck");
+        const textarea = $("#wordContainer");
+        const highlights = document.querySelector("#highlights");
+        const length = $("#length");
+        const output = document.querySelector(".output-label output");
+        const list = document.querySelector("#list");
+        const template = document.querySelector("template");
+        const clrBtn = document.querySelector("#clrBtn");
+
+        let hiddens = [];
+        let duplicates = {};
+
+        // Text analysis
+        const count = (text, minLength) => {
+            
+            const wordRegex = isChrome || isSafari ?
+            new RegExp(`([\\p{Alphabetic}\\p{Mark}\\p{Decimal_Number}\\p{Connector_Punctuation}\\p{Join_Control}]\+){${minLength},}`, 'gu') :
+            new RegExp(`(\\w+){${minLength},}`, 'g');
+            let result;
+            const words = {};
+            
+            while ( (result = wordRegex.exec(text) ) !== null ) {
+                if (window.CP.shouldStopExecution(0)) break;
+                
+                const word = result[0].toLowerCase();
+                if (!words[word]) {
+                    words[word] = [];
+                }
+                words[word].push(result.index);
+                words[word].push(result.index + word.length);
+            }window.CP.exitedLoop(0);
+            return words;
+        };
+
+        const duplicatePass = ([key, value]) => 2 < value.length;
+
+        const occurrenceComparator = ([keyA, valueA], [keyB, valueB]) =>
+        valueB.length - valueA.length;
+
+        const numberComparator = (numberA, numberB) => numberA - numberB;
+
+        const differ = (object, [key, value], index) => {
+            object[key] = {
+                action: object[key] ? "KEEP" : "ADD",
+                word: key,
+                occurrences: value,
+                index 
+            };
+
+            return object;
+        };
+
+        const cleaner = (object, [word, details]) => {
+            if (details.action) {
+                delete details.action;
+                object[word] = details;
+            }
+            return object;
+        };
+
+        const flattener = (array, details) => [...array, ...details.occurrences];
+
+        // DOM manipulation
+        const update = (item, details) => {
+            item.style.zIndex = details.occurrences.length / 2;
+            item.querySelector(".count").textContent = details.occurrences.length / 2;
+        };
+
+        const add = (word, details) => {
+            const node = document.importNode(template.content, true);
+            list.appendChild(node);
+            const item = list.lastElementChild;
+            item.id = `word-${word}`;
+
+            const hidden = item.querySelector("#list .item .d-none");
+            hidden.name = word;
+            hidden.checked = hiddens.includes(word);
+            hidden.addEventListener("change", handleToggle);
+            item.querySelector(".word").textContent = word;
+            update(item, details);
+        };
+
+        const keep = (word, details) => {
+            const item = document.querySelector(`#word-${word}`);
+            update(item, details);
+        };
+
+        const markObsolete = word => {
+            document.querySelector(`#word-${word}`).classList.add("obsolete");
+        };
+
+        const remove = item => item.remove();
+
+            const removeObsolete = () => {
+            document.querySelectorAll(".obsolete").forEach(remove);
+        };
+
+        const render = ([word, details]) => {
+            if (details.action === "ADD") {
+                add(word, details);
+            } else if (details.action === "KEEP") {
+                keep(word, details);
+            } else {
+                markObsolete(word);
+            }
+        };
+
+        const getHue = word => {
+            return (360 - 360 / Object.keys(duplicates).length * duplicates[word.toLowerCase()].index);
+        };
+
+        const getHSL = word => {
+            const hue = getHue(word);
+            return `hsl(${hue + 20}, 100%, ${180 < hue && hue < 360 ? 80 : 50}%)`;
+        };
+
+        const colorize = word => {
+            const color = getHSL(word);
+            const count = document.querySelector('#word-' + word +' .count');
+            const wordElement = document.querySelector('#word-' + word +' .word');
+            count.style.borderColor = color;
+            count.style.backgroundColor = color;
+        };
+
+        const highlight = (occurrence, index, occurrences) => {
+            let node;
+            if (index < occurrences.length - 1) {
+                if (index % 2) {
+                const word = textarea.val().substring(occurrence, occurrences[index + 1]);
+                node = document.createElement("mark");
+                node.textContent = word;
+                if (!hiddens.includes(word.toLowerCase())) {
+                    const color = getHSL(word);
+                    node.style.background = color;
+                    node.style.border = `0.2rem solid ${color}`;
+                }
+            } else {
+                const text = textarea.val().substring(occurrence, occurrences[index + 1]);
+                    node = document.createTextNode(text);
+                }
+            } else {
+                const text = textarea.val().substring(occurrence);
+                node = document.createTextNode(text + "\r\n\r\n");
+            }
+            highlights.appendChild(node);
+        };
+
+        const handleChange = () => {
+            // Count words
+            const words = count( textarea.val(), length.val() );
+
+            // Diff word stats with previous
+            const diff = Object.entries(words).
+            filter(duplicatePass).
+            sort(occurrenceComparator).
+            reduce(differ, duplicates);
+
+            // Render items
+            Object.entries(diff).forEach(render);
+
+            // Clean obsolete from duplicates
+            duplicates = Object.entries(diff).reduce(cleaner, {});
+
+            // Adjust height of list
+            list.style.height = '${1.2 + Object.keys(duplicates).length * 3}rem';
+
+            // Colorize items
+            Object.keys(duplicates).forEach(colorize);
+
+            // Flatten occurrences
+            const occurrences = Object.values(duplicates).
+            reduce(flattener, [0]).
+            sort(numberComparator);
+
+            // Highlight
+            while (highlights.firstChild) {if (window.CP.shouldStopExecution(1)) break;
+                highlights.removeChild(highlights.firstChild);
+            }window.CP.exitedLoop(1);
+            occurrences.forEach(highlight);
+
+            // Remove
+            window.setTimeout(removeObsolete, 400);
+        };
+
+        const handleToggle = event => {
+            const word = event.target.name;
+            if (event.target.checked) {
+                if (!hiddens.includes(word)) {
+                    hiddens.push(word);
+                }
+            } else {
+                const index = hiddens.indexOf(word);
+                if (0 <= index) {
+                    hiddens.splice(index, 1);
+                }
+            }
+            handleChange();
+        };
+
+        spellcheck.on("change", function(event) {
+            textarea.attr("spellcheck", event.target.checked.toString());
+            const value = textarea.val();
+            textarea.val( value + " " );
+            textarea.val(value);
+        });
+
+        textarea.on("scroll", function(event) {
+            highlights.scrollTop = event.target.scrollTop;
+        });
+
+        
+        textarea.one("focus", function(event) {
+            //textarea.val("");
+            //handleChange();
+        });
+        
+        textarea.on("input", handleChange);
+        
+        length.on("input", function(){
+            handleChange();
+            output.textContent = length.val()
+        });
+
+        handleChange();
+        
+        
+    });
+
+</script> <script src="../../../cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="1327160bb025a4093c92e1d6-|49" defer=""></script></body>
+
+<!-- Mirrored from toolzdot.com/zh/text-list/duplicate-word-finder/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Nov 2022 07:12:08 GMT -->
+</html>

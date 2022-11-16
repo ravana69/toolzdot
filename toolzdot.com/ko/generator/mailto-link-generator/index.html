@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ko" dir="auto">
+
+<!-- Mirrored from toolzdot.com/ko/generator/mailto-link-generator/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Nov 2022 08:12:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="google" content="notranslate" />
+<meta name="robots" content="index, follow" />
+<meta name="revisit-after" content="1 days" />
+
+<link rel="preload" href="https://toolzdot.com/assets/css/app.css?v=4.1" as="style">
+<link rel="preload" href="https://toolzdot.com/assets/js/app.js?v=4.1" as="script">
+<link rel="preconnect" href="https://code.jquery.com/">
+<link rel="dns-prefetch" href="https://code.jquery.com/">
+<link rel="preconnect" href="https://cdn.jsdelivr.net/">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net/">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com/">
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://toolzdot.com/assets/css/app.css?v=4.1" rel="stylesheet">
+
+<title>메일투 링크 생성기 – ToolzDot</title>
+
+<meta name="description" content="Mailto 링크 생성기는 복잡한 이메일 주소나 구문을 기억하지 않고도 mailto 링크를 생성하는 쉬운 방법을 제공합니다.">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ToolzDot" />
+<meta property="og:url" content="https://toolzdot.com/ko/generator/mailto-link-generator/">
+<meta property="og:title" content="메일투 링크 생성기 – ToolzDot">
+<meta property="og:description" content="Mailto 링크 생성기는 복잡한 이메일 주소나 구문을 기억하지 않고도 mailto 링크를 생성하는 쉬운 방법을 제공합니다.">
+<meta property="og:image" content="https://toolzdot.com/assets/images/generator/mailto-link-generator.jpg">
+<meta itemprop="image" content="https://toolzdot.com/assets/images/generator/mailto-link-generator.jpg">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://toolzdot.com/ko/generator/mailto-link-generator/">
+<meta property="twitter:title" content="메일투 링크 생성기 – ToolzDot">
+<meta property="twitter:description" content="Mailto 링크 생성기는 복잡한 이메일 주소나 구문을 기억하지 않고도 mailto 링크를 생성하는 쉬운 방법을 제공합니다.">
+<meta property="twitter:image" content="https://toolzdot.com/assets/images/generator/mailto-link-generator.jpg">
+
+<link rel="canonical" href="https://toolzdot.com/ko/generator/mailto-link-generator/">
+<link rel="alternate" href="https://toolzdot.com/generator/mailto-link-generator/" hreflang="x-default" />
+<link rel="alternate" href="https://toolzdot.com/generator/mailto-link-generator/" hreflang="en" />
+<link rel="alternate" href="https://toolzdot.com/bn/generator/mailto-link-generator/" hreflang="bn" />
+<link rel="alternate" href="https://toolzdot.com/zh/generator/mailto-link-generator/" hreflang="zh" />
+<link rel="alternate" href="https://toolzdot.com/fr/generator/mailto-link-generator/" hreflang="fr" />
+<link rel="alternate" href="https://toolzdot.com/de/generator/mailto-link-generator/" hreflang="de" />
+<link rel="alternate" href="https://toolzdot.com/hi/generator/mailto-link-generator/" hreflang="hi" />
+<link rel="alternate" href="https://toolzdot.com/hu/generator/mailto-link-generator/" hreflang="hu" />
+<link rel="alternate" href="https://toolzdot.com/id/generator/mailto-link-generator/" hreflang="id" />
+<link rel="alternate" href="https://toolzdot.com/it/generator/mailto-link-generator/" hreflang="it" />
+<link rel="alternate" href="https://toolzdot.com/ko/generator/mailto-link-generator/" hreflang="ko" />
+<link rel="alternate" href="https://toolzdot.com/pl/generator/mailto-link-generator/" hreflang="pl" />
+<link rel="alternate" href="https://toolzdot.com/pt/generator/mailto-link-generator/" hreflang="pt" />
+<link rel="alternate" href="https://toolzdot.com/ru/generator/mailto-link-generator/" hreflang="ru" />
+<link rel="alternate" href="https://toolzdot.com/es/generator/mailto-link-generator/" hreflang="es" />
+<link rel="alternate" href="https://toolzdot.com/sw/generator/mailto-link-generator/" hreflang="sw" />
+<link rel="alternate" href="https://toolzdot.com/te/generator/mailto-link-generator/" hreflang="te" />
+<link rel="alternate" href="https://toolzdot.com/th/generator/mailto-link-generator/" hreflang="th" />
+<link rel="alternate" href="https://toolzdot.com/uk/generator/mailto-link-generator/" hreflang="uk" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://toolzdot.com/assets/images/fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://toolzdot.com/assets/images/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://toolzdot.com/assets/images/fav/favicon-16x16.png">
+<link rel="manifest" href="https://toolzdot.com/assets/images/fav/site.webmanifest">
+<link rel="mask-icon" href="https://toolzdot.com/assets/images/fav/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="https://toolzdot.com/assets/images/fav/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="https://toolzdot.com/assets/images/fav/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V709D1W8GB" type="81c71ad5b8a192f5677be09b-text/javascript"></script>
+<script type="81c71ad5b8a192f5677be09b-text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-V709D1W8GB');
+    </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2505158782154953" crossorigin="anonymous" type="81c71ad5b8a192f5677be09b-text/javascript"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+<div class="container">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<a class="navbar-brand" href="https://toolzdot.com/ko/">
+<img class="logo-light" src="https://toolzdot.com/assets/images/logo-light.png" height="28" width="130" alt="ToolzDot">
+<img class="logo-dark" src="https://toolzdot.com/assets/images/logo-dark.png" height="28" width="130" alt="ToolzDot">
+</a>
+<ul class="navbar-nav lang-menu"><li class="nav-item dropdown mr-3"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLang" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="d-inline">ko</span></a><div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownLang"><a class="dropdown-item" href="https://toolzdot.com/generator/mailto-link-generator/"><span class="">english</span></a><a class="dropdown-item" href="https://toolzdot.com/bn/generator/mailto-link-generator/"><span class="">bengali</span></a><a class="dropdown-item" href="https://toolzdot.com/zh/generator/mailto-link-generator/"><span class="">chinese</span></a><a class="dropdown-item" href="https://toolzdot.com/fr/generator/mailto-link-generator/"><span class="">french</span></a><a class="dropdown-item" href="https://toolzdot.com/de/generator/mailto-link-generator/"><span class="">german</span></a><a class="dropdown-item" href="https://toolzdot.com/hi/generator/mailto-link-generator/"><span class="">hindi</span></a><a class="dropdown-item" href="https://toolzdot.com/hu/generator/mailto-link-generator/"><span class="">hungarian</span></a><a class="dropdown-item" href="https://toolzdot.com/id/generator/mailto-link-generator/"><span class="">indonesian</span></a><a class="dropdown-item" href="https://toolzdot.com/it/generator/mailto-link-generator/"><span class="">italian</span></a><a class="dropdown-item" href="https://toolzdot.com/ko/generator/mailto-link-generator/"><span class="">korean</span></a><a class="dropdown-item" href="https://toolzdot.com/pl/generator/mailto-link-generator/"><span class="">polish</span></a><a class="dropdown-item" href="https://toolzdot.com/pt/generator/mailto-link-generator/"><span class="">portuguese</span></a><a class="dropdown-item" href="https://toolzdot.com/ru/generator/mailto-link-generator/"><span class="">russian</span></a><a class="dropdown-item" href="https://toolzdot.com/es/generator/mailto-link-generator/"><span class="">spanish</span></a><a class="dropdown-item" href="https://toolzdot.com/sw/generator/mailto-link-generator/"><span class="">swahili</span></a><a class="dropdown-item" href="https://toolzdot.com/te/generator/mailto-link-generator/"><span class="">telugu</span></a><a class="dropdown-item" href="https://toolzdot.com/th/generator/mailto-link-generator/"><span class="">thai</span></a><a class="dropdown-item" href="https://toolzdot.com/uk/generator/mailto-link-generator/"><span class="">ukrainian</span></a></div></li><li class="nav-item">
+<a href="#" class="nav-link dark-light" title="dark-mode">
+<i class="fa fa-moon" id="ico-moon"> </i>
+<i class="fa fa-sun" id="ico-sun"> </i>
+</a>
+</li></ul>
+</div>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+<div class="container">
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="textListDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+텍스트 및 목록 </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="textListDropdown">
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/random-fake-word-generator/">
+가짜 단어 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/convert-case/">
+대소문자 변환 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/generate-synonym/">
+동의어 생성 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/roman-numerals-generator/">
+로마 숫자 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/duplicate-word-finder/">
+중복된 단어 찾기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/random-letter-generator/">
+난수 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/zero-width-space-bookmarklet/">
+0 너비 공간 책갈피 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/reverse-list/">
+역 목록 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/list-randomizer/">
+목록 랜덤화기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/sort-list/">
+목록 정렬 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/add-text-each-line/">
+각 줄에 텍스트 추가 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/remove-white-space/">
+여분의 공백 제거 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/convert-tabs-spaces/">
+탭을 공백으로 변환 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/convert-spaces-tabs/">
+공간을 탭으로 변환 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/remove-line-break/">
+줄바꿈 제거 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/remove-empty-line/">
+빈 줄 제거 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/text-list/repeat-text/">
+텍스트 반복 </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="randomDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+무작위 </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="randomDropdown">
+<a class="dropdown-item" href="https://toolzdot.com/ko/random/bible-verse-generator/">
+무작위 성경 구절 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/random/wikipedia-random-article-and-search/">
+무작위 Wikipedia 기사 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/random/name-picker/">
+임의의 이름 선택기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/random/food-generator/">
+무작위 무작위 음식 생성기 </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="counterDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+카운터 </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="counterDropdown">
+<a class="dropdown-item" href="https://toolzdot.com/ko/counter/spacebar-counter/">
+스페이스바 카운터 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/counter/webpage-word/">
+웹페이지 워드 카운터 </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="socialDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+소셜 미디어 </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="socialDropdown">
+<a class="dropdown-item" href="https://toolzdot.com/ko/hashtag-generator/">
+인스타그램 해시태그 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/instagram-line-break/">
+인스타그램 줄바꿈 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/pinterest-hashtag-generator/">
+Pinterest 해시태그 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/twitter-trends/">
+트위터 트렌드 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/yt-trends/">
+YouTube 트렌드 </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="generatorsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+발전기 </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="generatorsDropdown">
+<a class="dropdown-item" href="https://toolzdot.com/ko/generator/password-generator/">
+비밀번호 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/generator/api-key-generator/">
+API 키 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/generator/mailto-link-generator/">
+메일투 링크 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/generator/lorem-ipsum-generator/">
+로렘 입섬 생성기 </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="colorsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+색상 </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="colorsDropdown">
+<a class="dropdown-item" href="https://toolzdot.com/ko/colors/lighten-color/">
+색상 밝게 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/colors/darken-color/">
+어두운 색상 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/colors/change-color-saturation/">
+채도 변경 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/colors/invert-color/">
+색상 반전 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/colors/grayscale-color/">
+색상을 그레이스케일 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/colors/random-color/">
+무작위 색상 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/colors/blend-colors/">
+색상 혼합 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/colors/change-color-hue/">
+색상 변경 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/colors/color-shades-generator/">
+색상 음영 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/colors/random-pastel-color-generator/">
+파스텔 색상 생성기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/colors/image-color-palette-extractor/">
+색상 팔레트 추출기 </a>
+<a class="dropdown-item" href="https://toolzdot.com/ko/colors/complementary-color/">
+보색 색상 </a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</nav><div class="container">
+<div class="row">
+<div class="col-12">
+<div class="td-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+<h1 class="py-3">메일투 링크 생성기</h1>
+<p class="text-muted">Mailto 링크 생성기를 사용하면 웹사이트에 대한 mailto 링크를 빠르고 쉽게 만들 수 있습니다.</p>
+</div>
+</div>
+<div class="col-12 mb-3 mt-3">
+
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item">
+<a href="https://toolzdot.com/ko/">
+홈
+</a>
+</li>
+<li class="breadcrumb-item">
+<a href="https://toolzdot.com/ko/generator/">
+발전기
+</a>
+</li>
+<li class="breadcrumb-item active">메일투 링크 생성기</li>
+</ol>
+<script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [{
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "홈",
+                            "item": "https://toolzdot.com/ko/"
+                        },{
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "발전기",
+                            "item": "https://toolzdot.com/ko/generator/"
+                        },{
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "메일투 링크 생성기"
+                    }]
+                }
+                </script>
+</nav>
+
+<div class="tdotad ">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2505158782154953" crossorigin="anonymous" type="81c71ad5b8a192f5677be09b-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2505158782154953" data-ad-slot="6903139835" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script type="81c71ad5b8a192f5677be09b-text/javascript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="card tb-green mt-3">
+<div class="card-body">
+<div class="row">
+<div class="col-12 col-md-10 mx-auto mb-5">
+<div class="card">
+<div class="card-header">
+옵션 </div>
+<div class="card-body">
+
+<div class="form-group">
+<label for="mail_to">받는 사람</label>
+<input type="email" class="form-control" id="mail_to">
+</div>
+<div class="form-row">
+
+<div class="form-group col-md-6">
+<label for="mail_cc">참조</label>
+<input type="email" class="form-control" id="mail_cc">
+</div>
+
+<div class="form-group col-md-6">
+<label for="mail_bcc">숨은 참조</label>
+<input type="text" class="form-control" id="mail_bcc">
+</div>
+</div>
+
+<div class="form-group">
+<label for="mail_sub">제목</label>
+<input type="text" class="form-control" id="mail_sub">
+</div>
+
+<div class="form-group">
+<label for="mail_body">본문</label>
+<textarea id="mail_body" class="form-control" rows="7"></textarea>
+</div>
+
+<div class="form-group">
+<label for="mail_link_text">메일로 링크</label>
+<input type="text" class="form-control" id="mail_link_text">
+</div>
+<div class="form-group text-center mt-3">
+<button class="btn btn-success" id="genBtn"><i class="fas fa-cog"></i> 생성</button>
+</div>
+<div class="form-row">
+
+<div class="form-group col-md-6">
+<label for="mail_link_preview">메일로 링크</label>
+<textarea id="mail_link_preview" class="form-control" rows="4"></textarea>
+<p class="mt-3 text-center"><button class="btn btn-danger btn-sm copyBtn" data-clipboard-action="copy" data-clipboard-target="#mail_link_preview"><i class="far fa-copy"></i> 복사</button></p>
+</div>
+
+<div class="form-group col-md-6">
+<label for="mail_html_preview">HTML 코드</label>
+<textarea id="mail_html_preview" class="form-control" rows="4"></textarea>
+<p class="mt-3 text-center">
+<button class="btn btn-danger btn-sm copyBtn" data-clipboard-action="copy" data-clipboard-target="#mail_html_preview"><i class="far fa-copy"></i> 복사</button>
+<a class="btn btn-primary btn-sm text-white" id="tryLink"><i class="fas fa-external-link-alt"></i> 시도</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="form-row">
+</div>
+</div>
+<div class="col-12"><div class="tdotad ">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2505158782154953" crossorigin="anonymous" type="81c71ad5b8a192f5677be09b-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2505158782154953" data-ad-slot="4096476695" data-ad-format="auto" data-full-width-responsive="true"></ins>
+ <script type="81c71ad5b8a192f5677be09b-text/javascript">
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+</div></div>
+
+<div class="col-12 text-center">
+<div class="jumbotron mt-5">
+
+<div class="rating">
+<h2>우리 도구가 얼마나 유용했습니까?</h2>
+<p class="text-muted">저희 도구를 별 5개 중에서 평가하려면 아래 별을 클릭하세요.</p>
+<div class="rating-star">
+<ul class="text-center">
+<li class="star fix" data-id="1"><i class="fa fa-star" aria-hidden="true"></i></li><li class="star fix" data-id="2"><i class="fa fa-star" aria-hidden="true"></i></li><li class="star fix" data-id="3"><i class="fa fa-star" aria-hidden="true"></i></li><li class="star fix" data-id="4"><i class="fa fa-star" aria-hidden="true"></i></li><li class="star fix" data-id="5"><i class="fa fa-star" aria-hidden="true"></i></li>  </ul>
+</div>
+<p>
+평균 평점: <span class="rating-val">5</span> / 5
+투표 수: <span class="vote-count">1</span>
+</p>
+<div class="alert alert-success rate_msg d-none">평가해주셔서 감사합니다!</div>
+<div class="alert alert-warning rate_rated d-none">이미 평가했습니다!</div>
+</div>
+<script type="application/ld+json">{
+                                    "@context": "https://schema.org/",
+                                    "@type": "SoftwareApplication",
+                                    "name": "메일투 링크 생성기",
+                                    "operatingSystem": "all",
+                                    "applicationCategory": "UtilitiesApplication", 
+                                    "aggregateRating": {
+                                    "@type": "AggregateRating",
+                                        "ratingValue": "5",
+                                        "ratingCount": "1",
+                                        "bestRating": "5",
+                                        "worstRating": "1"
+                                    },
+                                    "offers": {
+                                        "@type": "Offer",
+                                        "price": "0", 
+                                        "priceCurrency": "USD"
+                                    }
+                                }</script>
+
+</div>
+</div>
+</div>
+<div class="tdotad ">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2505158782154953" crossorigin="anonymous" type="81c71ad5b8a192f5677be09b-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2505158782154953" data-ad-slot="6903139835" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script type="81c71ad5b8a192f5677be09b-text/javascript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<div class="row mt-5">
+
+<div class="col-lg-8 article">
+<h2>메일투 링크란 무엇입니까?</h2>
+<p>mailto 링크는 기본 이메일 클라이언트를 열고 지정한 텍스트로 받는 사람, 제목 및 본문 필드를 미리 채우는 하이퍼링크를 만들 수 있는 HTML 요소 유형입니다.</p>
+<h2>mailto 링크는 어떻게 작동합니까?</h2>
+<p>사용자가 mailto 링크를 클릭하면 이메일 클라이언트(Microsoft Outlook, Gmail 등)가 열리고 지정된 제목과 본문 텍스트가 포함된 지정된 주소로 이메일을 보낼 수 있습니다. </p>
+<h2>HTML에서 mailto 링크를 만드는 방법은 무엇입니까?</h2>
+<p>
+HTML로 mailto 링크를 만드는 것은 쉽습니다! <a> 태그를 사용하고 다음과 같이 "mailto:" 프로토콜을 지정하기만 하면 됩니다.<br />
+<a href="https://toolzdot.com/cdn-cgi/l/email-protection#8aeff2ebe7fae6efcaefe7ebe3e6a4e9e5e7">이메일을 보내주세요!</a>
+</p>
+<p>이렇게 하면 "이메일을 보내주세요!"라는 링크가 생성됩니다. 클릭하면 받는 사람 필드가 "<span class="__cf_email__" data-cfemail="35504d5458455950755058545c591b565a58">[email&#160;protected]</span>"으로 미리 채워진 사용자의 기본 이메일 클라이언트가 열립니다.</p>
+<p>
+제목 및 본문 필드도 미리 채우려면 다음과 같이 mailto 링크 끝에 "?subject=Your%20Subject&body=Your%20Body"를 추가하면 됩니다.
+<a href="https://toolzdot.com/cdn-cgi/l/email-protection#690c11080419050c290c04080005470a0604561a1c0b030c0a1d5430061c1b4c5b593a1c0b030c0a1d4f0b060d105430061c1b4c5b592b060d105785f4dd82c0fd85f4d585f4ed4982dadd82ebdd85cad585edd185f3fd4855460857646355461957646355195764634949494983ded182f6c582c0dd49" 이메일을 보내주세요!"라는 링크가 생성됩니다. 클릭하면 받는 사람 필드가 "example@email.com"으로 미리 채워지고 제목 필드가 "내 제목"으로 미리 채워지고 본문 필드가 미리 채워진 사용자의 기본 이메일 클라이언트가 열립니다. "당신의 몸"과 함께. < p>
+<h2>mailto 링크를 효과적으로 사용하기 위한 팁:</h2>
+<p>다음은 mailto 링크를 효과적으로 사용하기 위한 몇 가지 팁입니다. </p>
+<올>
+<li>사용자가 클릭한 내용을 알 수 있도록 설명 링크 텍스트 사용</li>
+<li>제목 및 본문 필드를 미리 채우는 경우 URL 인코딩 문자열을 사용하여 텍스트가 올바르게 표시되는지 확인하세요.</li>
+<li>mailto 링크를 게시하기 전에 테스트하여 예상대로 작동하는지 확인하십시오.</li>
+</ol>
+<h2>mailto 링크의 일반적인 문제를 해결하는 방법</h2>
+<p>mailto 링크에 문제가 있는 경우 다음 사항을 확인하세요.</p>
+<올>
+<li>"mailto:" 프로토콜이 href 속성에 지정되었는지 확인하십시오.</li>
+<li>이메일 주소가 유효하고 형식이 올바른지 확인하세요.</li>
+<li>URL로 인코딩된 문자열을 사용하는 경우 형식과 인코딩이 올바른지 확인하세요.</li>
+<li>비밀번호를 정기적으로 변경하십시오.</li>
+<li>여러 브라우저와 이메일 클라이언트에서 mailto 링크를 테스트하여 호환성을 확인합니다.</li>
+</ol>
+<section class="faq mb-5">
+<h2>FAQ:</h2>
+
+<div id="accordion" class="my-3" itemscope itemtype="https://schema.org/FAQPage">
+<div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div class="card-header" id="faq0">
+<h3 class="mb-0" itemprop="name">
+<button class="btn collapsed" data-toggle="collapse" data-target="#collapse0" aria-expanded="false" aria-controls="collapse0">
+메일투 링크란 무엇입니까?
+</button>
+</h3>
+</div>
+<div id="collapse0" class="collapse" aria-labelledby="faq0" data-parent="#accordion">
+<div class="card-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">mailto 링크는 기본 이메일 클라이언트를 열고 지정한 텍스트로 받는 사람, 제목 및 본문 필드를 미리 채우는 하이퍼링크를 만들 수 있는 HTML 요소 유형입니다. . </p>
+</div>
+</div>
+</div>
+<div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div class="card-header" id="faq1">
+<h3 class="mb-0" itemprop="name">
+<button class="btn collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+mailto 링크는 어떻게 작동합니까?
+</button>
+</h3>
+</div>
+<div id="collapse1" class="collapse" aria-labelledby="faq1" data-parent="#accordion">
+<div class="card-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">사용자가 mailto 링크를 클릭하면 이메일 클라이언트(Microsoft Outlook, Gmail 등)가 열리고 지정된 주소로 이메일을 보낼 수 있습니다. 제목과 본문. </p>
+</div>
+</div>
+</div>
+<div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div class="card-header" id="faq2">
+<h3 class="mb-0" itemprop="name">
+<button class="btn collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+HTML에서 mailto 링크를 생성하려면 어떻게 합니까?
+</button>
+</h3>
+</div>
+<div id="collapse2" class="collapse" aria-labelledby="faq2" data-parent="#accordion">
+<div class="card-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">HTML로 mailto 링크를 만드는 것은 쉽습니다! <a> 태그를 사용하고 다음과 같이 "mailto:" 프로토콜을 지정하십시오. <a href="https://toolzdot.com/cdn-cgi/l/email-protection#65001d0408150900250008040c094b060a085b36000b01450800450008040c0944594a045b454545594a155b686f4545454545454545454545454545454545454545454545454545454545454545454545454545454545454545594a010c135b686f45454545454545454545454545454545454545454545454545454545454545454545454545454545594a010c135b686f454545454545454545454545454545454545454545454545454545454545454545454545594a010c135b686f686f454545454545454545454545454545454545454545454545454545454545454545454545686f4545454545454545454545454545454545454545454545454545454545454545594a010c135b594448480406060a17010c0a0b48485b686f686f45454545454545454545454545454545454545454545454545454545594a160006110c0a0b5b686f686f454545454545454545454545454545454545454545454545594a010c135b594448484a15041704021704150d48485b686f454545454545454545454545454545454545454545454545686f454545454545454545454545454545454545454545454545594448481700090011000145110a0a091648485b686f45454545454545454545454545454545454545454545454559010c1345060904161658" col-lg-4">
+<div class="card">
+<div class="card-body">
+<h4 class="card-title text-center">관련 도구</h2>
+<ul class="list-group list-group-flush">
+
+<li class="list-group-item">
+<a href="https://toolzdot.com/ko/generator/password-generator/">
+<i class="fas fa-key" mr-2"></i>
+비밀번호 생성기 </a>
+</li>
+
+<li class="list-group-item">
+<a href="https://toolzdot.com/ko/generator/api-key-generator/">
+<i class="fas fa-grip-horizontal" mr-2"></i>
+API 키 생성기 </a>
+</li>
+
+
+<li class="list-group-item">
+<a href="https://toolzdot.com/ko/generator/lorem-ipsum-generator/">
+<i class="far fa-file-alt" mr-2"></i>
+로렘 입섬 생성기 </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="container">
+<footer class="pt-4 my-md-5 pt-md-5 border-top mt-5">
+<div class="row">
+<div class="col-12 col-md">
+<img class="logo-light" src="https://toolzdot.com/assets/images/logo-light.png" height="28" width="130" alt="ToolzDot">
+<img class="logo-dark" src="https://toolzdot.com/assets/images/logo-dark.png" height="28" width="130" alt="ToolzDot">
+<p class="pt-3 text-muted">ToolzDot으로 더 짧은 시간에 더 많은 작업을 수행하세요. 모든 도구를 한 곳에서 사용하면 더 빠르고 똑똑하게 작업할 수 있습니다.</p>
+<p>
+<a href="https://www.facebook.com/toolzdot" target="_blank"><i class="fab fa-facebook-square fa-2x social"></i></a>
+<a href="https://twitter.com/toolzdot" target="_blank"><i class="fab fa-twitter-square fa-2x social"></i></a>
+<a href="https://pinterest.com/toolzdot" target="_blank"><i class="fab fa-pinterest-square fa-2x social"></i></a>
+<a href="https://instagram.com/toolzdot" target="_blank"><i class="fab fa-instagram-square fa-2x social"></i></a>
+<a href="https://www.linkedin.com/in/toolzdot/" target="_blank"><i class="fab fa-linkedin fa-2x social"></i></a>
+</p>
+</div>
+<div class="col-6 col-md">
+<h4>페이지</h4>
+<ul class="list-unstyled text-small">
+<li><a href="https://toolzdot.com/about/" class="text-muted">회사 소개</a></li>
+<li><a href="https://toolzdot.com/contact/" class="text-muted">문의하기</a></li>
+<li><a href="https://toolzdot.com/privacy/" class="text-muted">개인정보 보호정책</a></li>
+<li><a href="https://toolzdot.com/toc/" class="text-muted">이용약관</a></li>
+<li><a href="http://www.dmca.com/Protection/Status.aspx?ID=111005f3-96da-4f46-9ab2-aa8e7388a268" title="DMCA.com Protection Status" class="dmca-badge footer-link"> <img src="https://images.dmca.com/Badges/dmca-badge-w100-5x1-01.png?ID=111005f3-96da-4f46-9ab2-aa8e7388a268" height="20px" width="100px" alt="DMCA.com Protection Status" /></a> <script data-cfasync="false" src="https://toolzdot.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js" type="81c71ad5b8a192f5677be09b-text/javascript"> </script></li>
+</ul>
+</div>
+<div class="col-6 col-md">
+<h4>서비스</h4>
+<ul class="list-unstyled text-small">
+<li><a href="https://toolzdot.com/ko/twitter-trends/" class="text-muted">트위터 트렌드</a></li>
+<li><a href="https://toolzdot.com/ko/yt-trends/" class="text-muted">YouTube 트렌드</a></li>
+<li><a href="https://toolzdot.com/ko/hashtag-generator/" class="text-muted">인스타그램 해시태그 생성기</a></li>
+<li><a href="https://toolzdot.com/ko/pinterest-hashtag-generator/" class="text-muted">Pinterest 해시태그 생성기</a></li>
+</ul>
+</div>
+<div class="col-6 col-md">
+<h4>도구</h4>
+<ul class="list-unstyled text-small">
+<li><a href="https://toolzdot.com/ko/text-list/" class="text-muted">텍스트 및 목록</a></li>
+<li><a href="https://toolzdot.com/ko/random/" class="text-muted">무작위</a></li>
+<li><a href="https://toolzdot.com/ko/counter/" class="text-muted">카운터</a></li>
+<li><a href="https://toolzdot.com/ko/generator/" class="text-muted">발전기</a></li>
+<li><a href="https://toolzdot.com/ko/colors/" class="text-muted">색상</a></li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="col text-center">
+<small class="d-block mb-3 text-muted">저작권 © 2022 ToolzDot</small>
+</div>
+</div>
+</footer>
+</div>
+<script type="81c71ad5b8a192f5677be09b-text/javascript">
+        var lang = "https://toolzdot.com/ko/generator/mailto-link-generator/ko/";
+        var page = "site_tool_generator_mailto";
+        var rate_url = "https://toolzdot.com/rating/";
+    </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="81c71ad5b8a192f5677be09b-text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" type="81c71ad5b8a192f5677be09b-text/javascript"></script>
+<script src="https://toolzdot.com/assets/js/app.js?v=4.1" type="81c71ad5b8a192f5677be09b-text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.9/clipboard.min.js" type="81c71ad5b8a192f5677be09b-text/javascript"></script>
+<script type="81c71ad5b8a192f5677be09b-text/javascript">
+$(document).ready(function(){
+    
+    var clipboard = new ClipboardJS('.copyBtn'); 
+    
+    $("#genBtn").click(function(){
+        const mail_to = $("#mail_to").val();
+        const mail_cc = $("#mail_cc").val();
+        const mail_bcc = $("#mail_bcc").val();
+        const mail_sub = $("#mail_sub").val();
+        const mail_body = $("#mail_body").val();
+        const mail_link_text = $("#mail_link_text").val();
+
+        let link_text ="Click Here";
+
+        if( mail_link_text ){
+            link_text = mail_link_text;
+        }
+
+        const mail_link_preview = $("#mail_link_preview");
+        const mail_html_preview = $("#mail_html_preview");
+
+        let link = `mailto:${mail_to}?cc=${mail_cc}&bcc=${mail_bcc}&subject=${encodeURIComponent(mail_sub)}&body=${encodeURIComponent(mail_body)}`
+        mail_link_preview.val(link);
+
+        let html_link = `<a href="${link}">${link_text}</a>`;
+        mail_html_preview.val(html_link);
+
+        $("#tryLink").attr('href', link);
+        $("#tryLink").attr('target', '_blank');
+    });
+
+    
+});
+
+</script> <script src="https://toolzdot.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="81c71ad5b8a192f5677be09b-|49" defer=""></script></body>
+
+<!-- Mirrored from toolzdot.com/ko/generator/mailto-link-generator/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Nov 2022 08:12:51 GMT -->
+</html>

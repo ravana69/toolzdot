@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="hu" dir="auto">
+
+<!-- Mirrored from toolzdot.com/hu/generator/mailto-link-generator/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Nov 2022 08:12:39 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="google" content="notranslate" />
+<meta name="robots" content="index, follow" />
+<meta name="revisit-after" content="1 days" />
+
+<link rel="preload" href="https://toolzdot.com/assets/css/app.css?v=4.1" as="style">
+<link rel="preload" href="https://toolzdot.com/assets/js/app.js?v=4.1" as="script">
+<link rel="preconnect" href="https://code.jquery.com/">
+<link rel="dns-prefetch" href="https://code.jquery.com/">
+<link rel="preconnect" href="https://cdn.jsdelivr.net/">
+<link rel="dns-prefetch" href="https://cdn.jsdelivr.net/">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com/">
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://toolzdot.com/assets/css/app.css?v=4.1" rel="stylesheet">
+
+<title>Mailto linkgenerátor – ToolzDot</title>
+
+<meta name="description" content="A Mailto Link Generator egyszerű módot kínál a mailto hivatkozások létrehozására anélkül, hogy meg kellene emlékeznie a bonyolult e-mail címekről vagy szintaxisról.">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ToolzDot" />
+<meta property="og:url" content="https://toolzdot.com/hu/generator/mailto-link-generator/">
+<meta property="og:title" content="Mailto linkgenerátor – ToolzDot">
+<meta property="og:description" content="A Mailto Link Generator egyszerű módot kínál a mailto hivatkozások létrehozására anélkül, hogy meg kellene emlékeznie a bonyolult e-mail címekről vagy szintaxisról.">
+<meta property="og:image" content="https://toolzdot.com/assets/images/generator/mailto-link-generator.jpg">
+<meta itemprop="image" content="https://toolzdot.com/assets/images/generator/mailto-link-generator.jpg">
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://toolzdot.com/hu/generator/mailto-link-generator/">
+<meta property="twitter:title" content="Mailto linkgenerátor – ToolzDot">
+<meta property="twitter:description" content="A Mailto Link Generator egyszerű módot kínál a mailto hivatkozások létrehozására anélkül, hogy meg kellene emlékeznie a bonyolult e-mail címekről vagy szintaxisról.">
+<meta property="twitter:image" content="https://toolzdot.com/assets/images/generator/mailto-link-generator.jpg">
+
+<link rel="canonical" href="https://toolzdot.com/hu/generator/mailto-link-generator/">
+<link rel="alternate" href="https://toolzdot.com/generator/mailto-link-generator/" hreflang="x-default" />
+<link rel="alternate" href="https://toolzdot.com/generator/mailto-link-generator/" hreflang="en" />
+<link rel="alternate" href="https://toolzdot.com/bn/generator/mailto-link-generator/" hreflang="bn" />
+<link rel="alternate" href="https://toolzdot.com/zh/generator/mailto-link-generator/" hreflang="zh" />
+<link rel="alternate" href="https://toolzdot.com/fr/generator/mailto-link-generator/" hreflang="fr" />
+<link rel="alternate" href="https://toolzdot.com/de/generator/mailto-link-generator/" hreflang="de" />
+<link rel="alternate" href="https://toolzdot.com/hi/generator/mailto-link-generator/" hreflang="hi" />
+<link rel="alternate" href="https://toolzdot.com/hu/generator/mailto-link-generator/" hreflang="hu" />
+<link rel="alternate" href="https://toolzdot.com/id/generator/mailto-link-generator/" hreflang="id" />
+<link rel="alternate" href="https://toolzdot.com/it/generator/mailto-link-generator/" hreflang="it" />
+<link rel="alternate" href="https://toolzdot.com/ko/generator/mailto-link-generator/" hreflang="ko" />
+<link rel="alternate" href="https://toolzdot.com/pl/generator/mailto-link-generator/" hreflang="pl" />
+<link rel="alternate" href="https://toolzdot.com/pt/generator/mailto-link-generator/" hreflang="pt" />
+<link rel="alternate" href="https://toolzdot.com/ru/generator/mailto-link-generator/" hreflang="ru" />
+<link rel="alternate" href="https://toolzdot.com/es/generator/mailto-link-generator/" hreflang="es" />
+<link rel="alternate" href="https://toolzdot.com/sw/generator/mailto-link-generator/" hreflang="sw" />
+<link rel="alternate" href="https://toolzdot.com/te/generator/mailto-link-generator/" hreflang="te" />
+<link rel="alternate" href="https://toolzdot.com/th/generator/mailto-link-generator/" hreflang="th" />
+<link rel="alternate" href="https://toolzdot.com/uk/generator/mailto-link-generator/" hreflang="uk" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="https://toolzdot.com/assets/images/fav/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://toolzdot.com/assets/images/fav/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="https://toolzdot.com/assets/images/fav/favicon-16x16.png">
+<link rel="manifest" href="https://toolzdot.com/assets/images/fav/site.webmanifest">
+<link rel="mask-icon" href="https://toolzdot.com/assets/images/fav/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="https://toolzdot.com/assets/images/fav/favicon.ico">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-config" content="https://toolzdot.com/assets/images/fav/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V709D1W8GB" type="e81f74384f4c493f06355ebf-text/javascript"></script>
+<script type="e81f74384f4c493f06355ebf-text/javascript">
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-V709D1W8GB');
+    </script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2505158782154953" crossorigin="anonymous" type="e81f74384f4c493f06355ebf-text/javascript"></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+<div class="container">
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<a class="navbar-brand" href="https://toolzdot.com/hu/">
+<img class="logo-light" src="https://toolzdot.com/assets/images/logo-light.png" height="28" width="130" alt="ToolzDot">
+<img class="logo-dark" src="https://toolzdot.com/assets/images/logo-dark.png" height="28" width="130" alt="ToolzDot">
+</a>
+<ul class="navbar-nav lang-menu"><li class="nav-item dropdown mr-3"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLang" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="d-inline">hu</span></a><div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownLang"><a class="dropdown-item" href="https://toolzdot.com/generator/mailto-link-generator/"><span class="">english</span></a><a class="dropdown-item" href="https://toolzdot.com/bn/generator/mailto-link-generator/"><span class="">bengali</span></a><a class="dropdown-item" href="https://toolzdot.com/zh/generator/mailto-link-generator/"><span class="">chinese</span></a><a class="dropdown-item" href="https://toolzdot.com/fr/generator/mailto-link-generator/"><span class="">french</span></a><a class="dropdown-item" href="https://toolzdot.com/de/generator/mailto-link-generator/"><span class="">german</span></a><a class="dropdown-item" href="https://toolzdot.com/hi/generator/mailto-link-generator/"><span class="">hindi</span></a><a class="dropdown-item" href="https://toolzdot.com/hu/generator/mailto-link-generator/"><span class="">hungarian</span></a><a class="dropdown-item" href="https://toolzdot.com/id/generator/mailto-link-generator/"><span class="">indonesian</span></a><a class="dropdown-item" href="https://toolzdot.com/it/generator/mailto-link-generator/"><span class="">italian</span></a><a class="dropdown-item" href="https://toolzdot.com/ko/generator/mailto-link-generator/"><span class="">korean</span></a><a class="dropdown-item" href="https://toolzdot.com/pl/generator/mailto-link-generator/"><span class="">polish</span></a><a class="dropdown-item" href="https://toolzdot.com/pt/generator/mailto-link-generator/"><span class="">portuguese</span></a><a class="dropdown-item" href="https://toolzdot.com/ru/generator/mailto-link-generator/"><span class="">russian</span></a><a class="dropdown-item" href="https://toolzdot.com/es/generator/mailto-link-generator/"><span class="">spanish</span></a><a class="dropdown-item" href="https://toolzdot.com/sw/generator/mailto-link-generator/"><span class="">swahili</span></a><a class="dropdown-item" href="https://toolzdot.com/te/generator/mailto-link-generator/"><span class="">telugu</span></a><a class="dropdown-item" href="https://toolzdot.com/th/generator/mailto-link-generator/"><span class="">thai</span></a><a class="dropdown-item" href="https://toolzdot.com/uk/generator/mailto-link-generator/"><span class="">ukrainian</span></a></div></li><li class="nav-item">
+<a href="#" class="nav-link dark-light" title="dark-mode">
+<i class="fa fa-moon" id="ico-moon"> </i>
+<i class="fa fa-sun" id="ico-sun"> </i>
+</a>
+</li></ul>
+</div>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+<div class="container">
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav mr-auto">
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="textListDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Szöveg és listák </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="textListDropdown">
+<a class="dropdown-item" href="https://toolzdot.com/hu/text-list/random-fake-word-generator/">
+Hamis szógenerátor </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/text-list/convert-case/">
+Eset átalakítása </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/text-list/generate-synonym/">
+Szinonima generálása </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/text-list/roman-numerals-generator/">
+Római számgenerátor </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/text-list/duplicate-word-finder/">
+Duplikált szókereső </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/text-list/random-letter-generator/">
+Véletlenszerű betűgenerátor </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/text-list/zero-width-space-bookmarklet/">
+Zero-Width Space Bookmarklet </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/text-list/reverse-list/">
+Fordított lista </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/text-list/list-randomizer/">
+Lista Randomizer </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/text-list/sort-list/">
+Lista rendezése </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/text-list/add-text-each-line/">
+Szöveg hozzáadása minden sorhoz </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/text-list/remove-white-space/">
+Felös szóköz eltávolítása </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/text-list/convert-tabs-spaces/">
+Tabulátorok átalakítása szóközökké </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/text-list/convert-spaces-tabs/">
+Szóközök átalakítása tabulátorokká </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/text-list/remove-line-break/">
+Sortörések eltávolítása </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/text-list/remove-empty-line/">
+Üres sorok eltávolítása </a>
+
+<a class="dropdown-item" href="https://toolzdot.com/hu/text-list/repeat-text/">
+Szöveg ismétlése </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="randomDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Véletlen </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="randomDropdown">
+<a class="dropdown-item" href="https://toolzdot.com/hu/random/bible-verse-generator/">
+Véletlenszerű bibliaversgenerátor </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/random/wikipedia-random-article-and-search/">
+Véletlenszerű Wikipédia-cikk </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/random/name-picker/">
+Véletlen névválasztó </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/random/food-generator/">
+Véletlenszerű ételgenerátor </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="counterDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Számlálók </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="counterDropdown">
+<a class="dropdown-item" href="https://toolzdot.com/hu/counter/spacebar-counter/">
+Szóköz számláló </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/counter/webpage-word/">
+Weboldal szószámláló </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="socialDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Közösségi média </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="socialDropdown">
+<a class="dropdown-item" href="https://toolzdot.com/hu/hashtag-generator/">
+Instagram hashtag-generátor </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/instagram-line-break/">
+Instagram sortörés generátor </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/pinterest-hashtag-generator/">
+Pinterest Hashtag-generátor </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/twitter-trends/">
+Twittertrendek </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/yt-trends/">
+YouTube-trendek </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="generatorsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Generátorok </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="generatorsDropdown">
+<a class="dropdown-item" href="https://toolzdot.com/hu/generator/password-generator/">
+Jelszógenerátor </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/generator/api-key-generator/">
+API kulcsgenerátor </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/generator/mailto-link-generator/">
+Mailto linkgenerátor </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/generator/lorem-ipsum-generator/">
+Lorem Ipsum generátor </a>
+</div>
+</li>
+
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="colorsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+Színek </a>
+<div class="dropdown-menu dropdown-menu-right" aria-labelledby="colorsDropdown">
+<a class="dropdown-item" href="https://toolzdot.com/hu/colors/lighten-color/">
+Szín világosítása </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/colors/darken-color/">
+Sötét szín </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/colors/change-color-saturation/">
+Telítettség módosítása </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/colors/invert-color/">
+Szín megfordítása </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/colors/grayscale-color/">
+Szürkeárnyalatos szín </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/colors/random-color/">
+Véletlenszerű színgenerátor </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/colors/blend-colors/">
+Színek keverése </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/colors/change-color-hue/">
+Színárnyalat módosítása </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/colors/color-shades-generator/">
+Színárnyalat-generátor </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/colors/random-pastel-color-generator/">
+Pasztellszíngenerátor </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/colors/image-color-palette-extractor/">
+Színpaletta kivonó </a>
+<a class="dropdown-item" href="https://toolzdot.com/hu/colors/complementary-color/">
+Kiegészítő szín </a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</nav><div class="container">
+<div class="row">
+<div class="col-12">
+<div class="td-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+<h1 class="py-3">Mailto linkgenerátor</h1>
+<p class="text-muted">A Mailto Link Generator segítségével gyorsan és egyszerűen hozhat létre mailto hivatkozásokat webhelyéhez</p>
+</div>
+</div>
+<div class="col-12 mb-3 mt-3">
+
+<nav aria-label="breadcrumb">
+<ol class="breadcrumb">
+<li class="breadcrumb-item">
+<a href="https://toolzdot.com/hu/">
+Főoldal
+</a>
+</li>
+<li class="breadcrumb-item">
+<a href="https://toolzdot.com/hu/generator/">
+Generátorok
+</a>
+</li>
+<li class="breadcrumb-item active">Mailto linkgenerátor</li>
+</ol>
+<script type="application/ld+json">
+                {
+                    "@context": "https://schema.org",
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [{
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Főoldal",
+                            "item": "https://toolzdot.com/hu/"
+                        },{
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Generátorok",
+                            "item": "https://toolzdot.com/hu/generator/"
+                        },{
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "Mailto linkgenerátor"
+                    }]
+                }
+                </script>
+</nav>
+
+<div class="tdotad ">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2505158782154953" crossorigin="anonymous" type="e81f74384f4c493f06355ebf-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2505158782154953" data-ad-slot="6903139835" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script type="e81f74384f4c493f06355ebf-text/javascript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+<div class="card tb-green mt-3">
+<div class="card-body">
+<div class="row">
+<div class="col-12 col-md-10 mx-auto mb-5">
+<div class="card">
+<div class="card-header">
+Lehetőség </div>
+<div class="card-body">
+
+<div class="form-group">
+<label for="mail_to">Címzett</label>
+<input type="email" class="form-control" id="mail_to">
+</div>
+<div class="form-row">
+
+<div class="form-group col-md-6">
+<label for="mail_cc">Másolat</label>
+<input type="email" class="form-control" id="mail_cc">
+</div>
+
+<div class="form-group col-md-6">
+<label for="mail_bcc">Titkos másolat</label>
+<input type="text" class="form-control" id="mail_bcc">
+</div>
+</div>
+
+<div class="form-group">
+<label for="mail_sub">Tárgy</label>
+<input type="text" class="form-control" id="mail_sub">
+</div>
+
+<div class="form-group">
+<label for="mail_body">Test</label>
+<textarea id="mail_body" class="form-control" rows="7"></textarea>
+</div>
+
+<div class="form-group">
+<label for="mail_link_text">Mailto link</label>
+<input type="text" class="form-control" id="mail_link_text">
+</div>
+<div class="form-group text-center mt-3">
+<button class="btn btn-success" id="genBtn"><i class="fas fa-cog"></i> Létrehozás</button>
+</div>
+<div class="form-row">
+
+<div class="form-group col-md-6">
+<label for="mail_link_preview">Mailto link</label>
+<textarea id="mail_link_preview" class="form-control" rows="4"></textarea>
+<p class="mt-3 text-center"><button class="btn btn-danger btn-sm copyBtn" data-clipboard-action="copy" data-clipboard-target="#mail_link_preview"><i class="far fa-copy"></i> Másolás</button></p>
+</div>
+
+<div class="form-group col-md-6">
+<label for="mail_html_preview">HTML kód</label>
+<textarea id="mail_html_preview" class="form-control" rows="4"></textarea>
+<p class="mt-3 text-center">
+<button class="btn btn-danger btn-sm copyBtn" data-clipboard-action="copy" data-clipboard-target="#mail_html_preview"><i class="far fa-copy"></i> Másolás</button>
+<a class="btn btn-primary btn-sm text-white" id="tryLink"><i class="fas fa-external-link-alt"></i> Próbáld ki</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div class="form-row">
+</div>
+</div>
+<div class="col-12"><div class="tdotad ">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2505158782154953" crossorigin="anonymous" type="e81f74384f4c493f06355ebf-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2505158782154953" data-ad-slot="4096476695" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script type="e81f74384f4c493f06355ebf-text/javascript">
+                 (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+</div></div>
+
+<div class="col-12 text-center">
+<div class="jumbotron mt-5">
+
+<div class="rating">
+<h2>Mennyire volt hasznos az eszközünk?</h2>
+<p class="text-muted">Kattintson az alábbi csillagra, hogy 5 csillagból értékelje eszközünket</p>
+<div class="rating-star">
+<ul class="text-center">
+<li class="star fix" data-id="1"><i class="fa fa-star" aria-hidden="true"></i></li><li class="star fix" data-id="2"><i class="fa fa-star" aria-hidden="true"></i></li><li class="star fix" data-id="3"><i class="fa fa-star" aria-hidden="true"></i></li><li class="star fix" data-id="4"><i class="fa fa-star" aria-hidden="true"></i></li><li class="star fix" data-id="5"><i class="fa fa-star" aria-hidden="true"></i></li> </ul>
+</div>
+<p>
+Átlagos értékelés: <span class="rating-val">5</span> / 5
+Szavazatok száma: <span class="vote-count">1</span>
+</p>
+<div class="alert alert-success rate_msg d-none">Köszönjük értékelését!</div>
+<div class="alert alert-warning rate_rated d-none">Már értékelte!</div>
+</div>
+<script type="application/ld+json">{
+                                    "@context": "https://schema.org/",
+                                    "@type": "SoftwareApplication",
+                                    "name": "Mailto linkgenerátor",
+                                    "operatingSystem": "all",
+                                    "applicationCategory": "UtilitiesApplication", 
+                                    "aggregateRating": {
+                                    "@type": "AggregateRating",
+                                        "ratingValue": "5",
+                                        "ratingCount": "1",
+                                        "bestRating": "5",
+                                        "worstRating": "1"
+                                    },
+                                    "offers": {
+                                        "@type": "Offer",
+                                        "price": "0", 
+                                        "priceCurrency": "USD"
+                                    }
+                                }</script>
+
+</div>
+</div>
+</div>
+<div class="tdotad ">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2505158782154953" crossorigin="anonymous" type="e81f74384f4c493f06355ebf-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2505158782154953" data-ad-slot="6903139835" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script type="e81f74384f4c493f06355ebf-text/javascript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+<div class="row mt-5">
+
+<div class="col-lg-8 article">
+<h2>Mi az a mailto hivatkozás?</h2>
+<p>A mailto link egy HTML-elem, amely lehetővé teszi egy hiperhivatkozás létrehozását, amely megnyitja az alapértelmezett levelezőprogramot, és előre kitölti a Címzett, Tárgy és Törzs mezőket a megadott szöveggel.</p>
+<h2>Hogyan működnek a mailto hivatkozások?</h2>
+<p>Amikor a felhasználó rákattint egy mailto linkre, megnyílik az e-mail kliense (például Microsoft Outlook, Gmail stb.), és e-mailt küldhet a megadott címre a megadott témával és törzsszöveggel. </p>
+<h2>Hogyan lehet mailto hivatkozást létrehozni HTML-ben?</h2>
+<p>
+A mailto hivatkozás létrehozása HTML-ben egyszerű! Csak használja az <a> címkét, és adja meg a „mailto:” protokollt, így:<br />
+<a href="https://toolzdot.com/cdn-cgi/l/email-protection#99fce1f8f4e9f5fcd9fcf4f8f0f5b7faf6f4">Küldj e-mailt!</a>
+</p>
+<p>Ezzel létrehoz egy linket, amely a következő szöveggel rendelkezik: "Küldj e-mailt!" és ha rákattint, megnyílik a felhasználó alapértelmezett levelezőprogramja a Címzett mezővel, amely előre kitöltve az „<span class="__cf_email__" data-cfemail="305548515d405c5570555d51595c1e535f5d">[email&#160;protected]</span>” szöveggel.</p>
+<p>
+Ha előre ki szeretné tölteni a Tárgy és a Törzs mezőt is, ezt úgy teheti meg, hogy a mailto link végéhez hozzáadja a "?subject=Your%20Subject&body=Your%20Body" kifejezést, így:
+<a href="https://toolzdot.com/cdn-cgi/l/email-protection#81e4f9e0ecf1ede4c1e4ece0e8edafe2eeecbef2f4e3ebe4e2f5bcd8eef4f3a4b3b1d2f4e3ebe4e2f5a7e3eee5f8bcd8eef4f3a4b3b1c3eee5f8">Küldj e-mailt!</a>
+</p>
+<p>
+Ezzel létrehoz egy linket, amely a következőt írja: "Küldj e-mailt!" és ha rákattint, megnyílik a felhasználó alapértelmezett e-mail kliense a Címzett mezővel előre kitöltve "<span class="__cf_email__" data-cfemail="83e6fbe2eef3efe6c3e6eee2eaefade0ecee">[email&#160;protected]</span>", a Tárgy mezőben az "Ön tárgya" mezővel és a Törzs mezővel. a "Te testeddel".
+</p>
+<h2>Tippek a mailto hivatkozások hatékony használatához:</h2>
+<p>Íme néhány tipp a mailto hivatkozások hatékony használatához: </p>
+<ol>
+<li>Használjon leíró linkszöveget, hogy a felhasználók tudják, mire kattintanak</li>
+<li>Ha előre kitölti a Tárgy és a Törzs mezőket, használjon URL-kódolt karakterláncokat, hogy biztosítsa a szöveg helyes megjelenését.</li>
+<li>Tesztelje mailto linkjeit közzétételük előtt, hogy megbizonyosodjon arról, hogy a várt módon működnek</li>
+</ol>
+<h2>A mailto hivatkozásokkal kapcsolatos gyakori problémák elhárítása</h2>
+<p>Ha problémái vannak a mailto hivatkozásaival, a következőket kell ellenőrizni:</p>
+<ol>
+<li>Győződjön meg arról, hogy a "mailto:" protokoll meg van adva a href attribútumban</li>
+<li>Győződjön meg arról, hogy e-mail címe érvényes és helyesen van formázva</li>
+<li>Ha URL-kódolású karakterláncokat használ, győződjön meg arról, hogy azok megfelelően vannak formázva és kódolva.</li>
+<li>Rendszeresen változtassa jelszavait.</li>
+<li>Tesztelje mailto linkjeit több böngészőben és e-mail kliensben a kompatibilitás biztosítása érdekében.</li>
+</ol>
+<section class="faq mb-5">
+<h2>GYIK:</h2>
+
+<div id="accordion" class="my-3" itemscope itemtype="https://schema.org/FAQPage">
+<div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div class="card-header" id="faq0">
+<h3 class="mb-0" itemprop="name">
+<button class="btn collapsed" data-toggle="collapse" data-target="#collapse0" aria-expanded="false" aria-controls="collapse0">
+Mi az a mailto hivatkozás?
+</button>
+</h3>
+</div>
+<div id="collapse0" class="collapse" aria-labelledby="faq0" data-parent="#accordion">
+<div class="card-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">A mailto link egy HTML-elem, amely lehetővé teszi egy hivatkozás létrehozását, amely megnyitja az alapértelmezett e-mail klienst, és előre kitölti a Címzett, Tárgy és Törzs mezőket a megadott szöveggel . </p>
+</div>
+</div>
+</div>
+<div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div class="card-header" id="faq1">
+<h3 class="mb-0" itemprop="name">
+<button class="btn collapsed" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+Hogyan működnek a mailto hivatkozások?
+</button>
+</h3>
+</div>
+<div id="collapse1" class="collapse" aria-labelledby="faq1" data-parent="#accordion">
+<div class="card-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">Amikor egy felhasználó rákattint egy mailto hivatkozásra, megnyílik az e-mail kliense (például Microsoft Outlook, Gmail stb.), és képes lesz e-mailt küldeni a megadott címre a megadott címre. tárgy és törzsszöveg. </p>
+</div>
+</div>
+</div>
+<div class="card" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+<div class="card-header" id="faq2">
+<h3 class="mb-0" itemprop="name">
+<button class="btn collapsed" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+Hogyan hozhatok létre mailto hivatkozást HTML-ben?
+</button>
+</h3>
+</div>
+<div id="collapse2" class="collapse" aria-labelledby="faq2" data-parent="#accordion">
+<div class="card-body" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+<p itemprop="text">A mailto hivatkozás létrehozása HTML-ben egyszerű! Csak használja az <a> címkét, és adja meg a "mailto:" protokollt a következőképpen: <a href="https://toolzdot.com/cdn-cgi/l/email-protection#b6d3ced7dbc6dad3f6d3dbd7dfda98d5d9db">Küldj e-mailt!</a> </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+<div class="col-lg-4">
+<div class="card">
+<div class="card-body">
+<h4 class="card-title text-center">Kapcsolódó eszközök</h2>
+<ul class="list-group list-group-flush">
+
+<li class="list-group-item">
+<a href="https://toolzdot.com/hu/generator/password-generator/">
+<i class="fas fa-key" mr-2"></i>
+Jelszógenerátor </a>
+</li>
+
+<li class="list-group-item">
+<a href="https://toolzdot.com/hu/generator/api-key-generator/">
+<i class="fas fa-grip-horizontal" mr-2"></i>
+API kulcsgenerátor </a>
+</li>
+
+
+<li class="list-group-item">
+<a href="https://toolzdot.com/hu/generator/lorem-ipsum-generator/">
+<i class="far fa-file-alt" mr-2"></i>
+Lorem Ipsum generátor </a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="container">
+<footer class="pt-4 my-md-5 pt-md-5 border-top mt-5">
+<div class="row">
+<div class="col-12 col-md">
+<img class="logo-light" src="https://toolzdot.com/assets/images/logo-light.png" height="28" width="130" alt="ToolzDot">
+<img class="logo-dark" src="https://toolzdot.com/assets/images/logo-dark.png" height="28" width="130" alt="ToolzDot">
+<p class="pt-3 text-muted">Többet érhet el kevesebb idő alatt a ToolzDot segítségével. Ha minden eszköze egy helyen van, akkor gyorsabban és intelligensebben dolgozhat.</p>
+<p>
+<a href="https://www.facebook.com/toolzdot" target="_blank"><i class="fab fa-facebook-square fa-2x social"></i></a>
+<a href="https://twitter.com/toolzdot" target="_blank"><i class="fab fa-twitter-square fa-2x social"></i></a>
+<a href="https://pinterest.com/toolzdot" target="_blank"><i class="fab fa-pinterest-square fa-2x social"></i></a>
+<a href="https://instagram.com/toolzdot" target="_blank"><i class="fab fa-instagram-square fa-2x social"></i></a>
+<a href="https://www.linkedin.com/in/toolzdot/" target="_blank"><i class="fab fa-linkedin fa-2x social"></i></a>
+</p>
+</div>
+<div class="col-6 col-md">
+<h4>Oldalok</h4>
+<ul class="list-unstyled text-small">
+<li><a href="https://toolzdot.com/about/" class="text-muted">Rólunk</a></li>
+<li><a href="https://toolzdot.com/contact/" class="text-muted">Kapcsolatfelvétel</a></li>
+<li><a href="https://toolzdot.com/privacy/" class="text-muted">Adatvédelmi szabályzat</a></li>
+<li><a href="https://toolzdot.com/toc/" class="text-muted">Feltételek és feltételek</a></li>
+<li><a href="http://www.dmca.com/Protection/Status.aspx?ID=111005f3-96da-4f46-9ab2-aa8e7388a268" title="DMCA.com Protection Status" class="dmca-badge footer-link"> <img src="https://images.dmca.com/Badges/dmca-badge-w100-5x1-01.png?ID=111005f3-96da-4f46-9ab2-aa8e7388a268" height="20px" width="100px" alt="DMCA.com Protection Status" /></a> <script data-cfasync="false" src="https://toolzdot.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js" type="e81f74384f4c493f06355ebf-text/javascript"> </script></li>
+</ul>
+</div>
+<div class="col-6 col-md">
+<h4>Szolgáltatások</h4>
+<ul class="list-unstyled text-small">
+<li><a href="https://toolzdot.com/hu/twitter-trends/" class="text-muted">Twittertrendek</a></li>
+<li><a href="https://toolzdot.com/hu/yt-trends/" class="text-muted">YouTube-trendek</a></li>
+<li><a href="https://toolzdot.com/hu/hashtag-generator/" class="text-muted">Instagram hashtag-generátor</a></li>
+<li><a href="https://toolzdot.com/hu/pinterest-hashtag-generator/" class="text-muted">Pinterest Hashtag-generátor</a></li>
+</ul>
+</div>
+<div class="col-6 col-md">
+<h4>Eszközök</h4>
+<ul class="list-unstyled text-small">
+<li><a href="https://toolzdot.com/hu/text-list/" class="text-muted">Szöveg és listák</a></li>
+<li><a href="https://toolzdot.com/hu/random/" class="text-muted">Véletlen</a></li>
+<li><a href="https://toolzdot.com/hu/counter/" class="text-muted">Számlálók</a></li>
+<li><a href="https://toolzdot.com/hu/generator/" class="text-muted">Generátorok</a></li>
+<li><a href="https://toolzdot.com/hu/colors/" class="text-muted">Színek</a></li>
+</ul>
+</div>
+</div>
+<div class="row">
+<div class="col text-center">
+<small class="d-block mb-3 text-muted">Szerzői jog © 2022 ToolzDot</small>
+</div>
+</div>
+</footer>
+</div>
+<script type="e81f74384f4c493f06355ebf-text/javascript">
+        var lang = "https://toolzdot.com/hu/generator/mailto-link-generator/hu/";
+        var page = "site_tool_generator_mailto";
+        var rate_url = "https://toolzdot.com/rating/";
+    </script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="e81f74384f4c493f06355ebf-text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" type="e81f74384f4c493f06355ebf-text/javascript"></script>
+<script src="https://toolzdot.com/assets/js/app.js?v=4.1" type="e81f74384f4c493f06355ebf-text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.9/clipboard.min.js" type="e81f74384f4c493f06355ebf-text/javascript"></script>
+<script type="e81f74384f4c493f06355ebf-text/javascript">
+$(document).ready(function(){
+    
+    var clipboard = new ClipboardJS('.copyBtn'); 
+    
+    $("#genBtn").click(function(){
+        const mail_to = $("#mail_to").val();
+        const mail_cc = $("#mail_cc").val();
+        const mail_bcc = $("#mail_bcc").val();
+        const mail_sub = $("#mail_sub").val();
+        const mail_body = $("#mail_body").val();
+        const mail_link_text = $("#mail_link_text").val();
+
+        let link_text ="Click Here";
+
+        if( mail_link_text ){
+            link_text = mail_link_text;
+        }
+
+        const mail_link_preview = $("#mail_link_preview");
+        const mail_html_preview = $("#mail_html_preview");
+
+        let link = `mailto:${mail_to}?cc=${mail_cc}&bcc=${mail_bcc}&subject=${encodeURIComponent(mail_sub)}&body=${encodeURIComponent(mail_body)}`
+        mail_link_preview.val(link);
+
+        let html_link = `<a href="${link}">${link_text}</a>`;
+        mail_html_preview.val(html_link);
+
+        $("#tryLink").attr('href', link);
+        $("#tryLink").attr('target', '_blank');
+    });
+
+    
+});
+
+</script> <script src="https://toolzdot.com/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="e81f74384f4c493f06355ebf-|49" defer=""></script></body>
+
+<!-- Mirrored from toolzdot.com/hu/generator/mailto-link-generator/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 Nov 2022 08:12:39 GMT -->
+</html>
